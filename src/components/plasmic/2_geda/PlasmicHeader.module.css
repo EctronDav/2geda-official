@@ -1,0 +1,143 @@
+.root {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: 130px;
+  max-width: none;
+  position: relative;
+  background: linear-gradient(180deg, #b469ef 0%, #b469ef 5%, #4f0da3 100%) 0%
+    0% / 100% 100% repeat;
+  padding: 8px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin-left: calc(0px - 50px);
+  width: calc(100% + 50px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 50px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    height: 100px;
+    display: flex;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root > :global(.__wab_flex-container) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.logo {
+  position: relative;
+  object-fit: cover;
+  max-width: none;
+  width: 90px;
+  height: auto;
+  margin-left: calc(5% + 50px) !important;
+  align-self: center;
+  flex-shrink: 0;
+}
+.logo > picture > img {
+  object-fit: cover;
+}
+.logo > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .logo {
+    margin-top: 15px;
+    margin-left: calc(5% + 50px) !important;
+  }
+}
+.headerRight {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 70%;
+  height: auto;
+  max-width: none;
+  align-self: center;
+  margin-left: calc(40% + 50px) !important;
+  padding: 8px;
+}
+.headerRight > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: calc(0px - 30px);
+  width: calc(100% + 30px);
+}
+.headerRight > :global(.__wab_flex-container) > *,
+.headerRight > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.headerRight > :global(.__wab_flex-container) > picture > img,
+.headerRight
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 30px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .headerRight {
+    margin-left: calc(22% + 50px) !important;
+  }
+}
+.signinButton {
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 40%;
+  height: 50px;
+  display: none;
+  border-radius: 10px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .signinButton {
+    display: none;
+  }
+}
+.signupButton {
+  position: relative;
+  left: auto;
+  top: auto;
+  height: 50px;
+  width: 40%;
+  background: #4e0ca2;
+  color: #ffffff;
+  display: none;
+  border-radius: 10px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .signupButton {
+    display: none;
+  }
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  align-self: baseline;
+  font-size: 35px;
+  color: #ffffff;
+  margin-top: 2%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  margin-left: calc(-89% + 50px) !important;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text {
+    margin-left: calc(-68% + 50px) !important;
+    display: none;
+  }
+}

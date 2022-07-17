@@ -1,0 +1,106 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+}
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  flex-direction: column;
+  background: none;
+  overflow: hidden;
+  padding: 0px;
+}
+.header {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 130px;
+  max-width: none;
+  background: linear-gradient(180deg, #b469ef 0%, #b469ef 5%, #4f0da3 100%) 0%
+    0% / 100% 100% repeat;
+  flex-shrink: 0;
+  padding: 0px;
+}
+.header > :global(.__wab_flex-container) {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin-left: calc(0px - 50px);
+  width: calc(100% + 50px);
+}
+.header > :global(.__wab_flex-container) > *,
+.header > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.header > :global(.__wab_flex-container) > picture > img,
+.header
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 50px;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: none;
+  left: auto;
+  top: auto;
+  width: 80px;
+  height: auto;
+  margin-right: 205px;
+  margin-left: calc(-57% + 50px) !important;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.text {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: calc(21% + 50px) !important;
+  margin-top: 0%;
+  margin-right: -33%;
+  margin-bottom: 0%;
+}
+.main {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  flex-direction: row;
+  padding: 0px;
+}
+.modalLeft:global(.__wab_instance) {
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .modalLeft:global(.__wab_instance) {
+    display: none;
+  }
+}
+.modalRight:global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}

@@ -1,0 +1,51 @@
+.root {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  max-width: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 0px;
+  border-right: 1px solid #bfb7b7;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    display: none;
+  }
+}
+.text__xjiY {
+  position: relative;
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  align-self: center;
+  font-size: 30px;
+  margin-right: 0px;
+  color: #9d9a9a;
+  margin-top: 8%;
+  padding: 0px 3px 0px 0px;
+}
+.text__wSLy {
+  position: relative;
+  width: 50%;
+  height: auto;
+  max-width: 800px;
+  font-size: 20px;
+  color: #6e00e8;
+  font-weight: 700;
+  margin-left: -77px;
+}
+.link {
+  position: relative;
+  width: 41.84%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 33%;
+  margin-right: 0px;
+  font-size: 20px;
+  color: #9d9a9a;
+  margin-left: -91px;
+  padding: 0px 3px 0px 0px;
+}
