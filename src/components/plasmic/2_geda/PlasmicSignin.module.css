@@ -86,7 +86,7 @@
   margin: 0% 5% 0% 0%;
   border-width: 0px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .button {
     display: none;
   }
@@ -105,7 +105,7 @@
   max-width: 100%;
   position: relative;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .mainLeft:global(.__wab_instance) {
     display: none;
   }

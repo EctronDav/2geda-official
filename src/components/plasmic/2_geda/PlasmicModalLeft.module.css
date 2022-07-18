@@ -10,7 +10,7 @@
   padding: 0px;
   border-right: 1px solid #bfb7b7;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .root {
     display: none;
   }

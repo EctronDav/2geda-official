@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -163,7 +163,8 @@
           "name": "Rate",
           "componentImportPath": "antd/lib/rate"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -182,7 +183,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
@@ -226,7 +228,8 @@
           "name": "CmsQueryRepeater",
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
@@ -416,6 +419,19 @@
           "cssFilePath": "plasmic/2_geda/PlasmicAuthBox2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "1MD9IiZ1p6",
+          "name": "PersonalDetails",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicPersonalDetails.jsx",
+          "importSpec": {
+            "modulePath": "PersonalDetails.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicPersonalDetails.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -750,6 +766,11 @@
           "id": "xE1ynDtN-",
           "name": "Mask group.png",
           "filePath": "plasmic/2_geda/images/maskGrouppng.png"
+        },
+        {
+          "id": "hSuOriKas",
+          "name": "unsplash_pYWuOMhtc6k.png",
+          "filePath": "plasmic/2_geda/images/unsplashPYWuOMhtc6Kpng.png"
         }
       ],
       "indirect": false,

@@ -24,13 +24,13 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 50px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .root {
     height: 100px;
     display: flex;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .root > :global(.__wab_flex-container) {
     align-items: center;
     justify-content: center;
@@ -52,7 +52,7 @@
 .logo > .__wab_img-spacer > img {
   object-fit: cover;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .logo {
     margin-top: 15px;
     margin-left: calc(5% + 50px) !important;
@@ -86,7 +86,7 @@
   > img {
   margin-left: 30px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .headerRight {
     margin-left: calc(22% + 50px) !important;
   }
@@ -100,7 +100,7 @@
   display: none;
   border-radius: 10px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .signinButton {
     display: none;
   }
@@ -116,7 +116,7 @@
   display: none;
   border-radius: 10px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .signupButton {
     display: none;
   }
@@ -135,7 +135,7 @@
   margin-left: calc(-89% + 50px) !important;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .text {
     margin-left: calc(-68% + 50px) !important;
     display: none;

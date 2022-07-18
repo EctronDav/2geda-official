@@ -94,7 +94,7 @@
   max-width: 100%;
   position: relative;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .mainLeft:global(.__wab_instance) {
     display: none;
   }

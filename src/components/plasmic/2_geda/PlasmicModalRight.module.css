@@ -33,7 +33,7 @@
   padding: 0px;
   margin: 0px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .textInput {
     margin-left: -3px;
   }
@@ -76,7 +76,7 @@
   padding: 0px;
   margin: 58% 0% 14%;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .freeBox__pSwr6 {
     justify-content: space-around;
   }

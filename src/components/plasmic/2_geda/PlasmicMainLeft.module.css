@@ -8,7 +8,7 @@
   min-width: 0;
   padding: 8px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .root {
     padding-bottom: 18px;
   }
@@ -60,7 +60,7 @@
   margin: 6% 0% 0% 10%;
   border-width: 0px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .button___2J9A {
     height: 50px;
     width: 50%;
@@ -83,7 +83,7 @@
   margin: 17% 0% 11% 28%;
   border-width: 0px;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .button__fkQWf {
     display: block;
   }

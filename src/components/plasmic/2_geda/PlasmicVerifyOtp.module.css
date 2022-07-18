@@ -94,7 +94,7 @@
 .modalLeft:global(.__wab_instance) {
   position: relative;
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .modalLeft:global(.__wab_instance) {
     display: none;
   }
