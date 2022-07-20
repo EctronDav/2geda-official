@@ -46,249 +46,326 @@ function PlasmicHomepage__RenderFunc(props) {
 
   return (
     <React.Fragment>
-      <div className={projectcss.plasmic_page_wrapper}>
-        <p.Stack
-          as={"div"}
-          data-plasmic-name={"root2"}
-          data-plasmic-override={overrides.root2}
-          data-plasmic-root={true}
-          data-plasmic-for-node={forNode}
-          hasGap={true}
-          className={classNames(
-            projectcss.all,
-            projectcss.root_reset,
-            projectcss.plasmic_default_styles,
-            projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            sty.root2
-          )}
+      <p.Stack
+        as={"div"}
+        data-plasmic-name={"root2"}
+        data-plasmic-override={overrides.root2}
+        data-plasmic-root={true}
+        data-plasmic-for-node={forNode}
+        hasGap={true}
+        className={classNames(
+          projectcss.all,
+          projectcss.root_reset,
+          projectcss.plasmic_default_styles,
+          projectcss.plasmic_mixins,
+          projectcss.plasmic_tokens,
+          sty.root2
+        )}
+      >
+        <div
+          data-plasmic-name={"container"}
+          data-plasmic-override={overrides.container}
+          className={classNames(projectcss.all, sty.container)}
         >
           <div
-            data-plasmic-name={"container"}
-            data-plasmic-override={overrides.container}
-            className={classNames(projectcss.all, sty.container)}
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames(projectcss.all, sty.header)}
           >
             <div
-              data-plasmic-name={"header"}
-              data-plasmic-override={overrides.header}
-              className={classNames(projectcss.all, sty.header)}
+              data-plasmic-name={"headerLeft"}
+              data-plasmic-override={overrides.headerLeft}
+              className={classNames(projectcss.all, sty.headerLeft)}
             >
-              <div
-                data-plasmic-name={"headerLeft"}
-                data-plasmic-override={overrides.headerLeft}
-                className={classNames(projectcss.all, sty.headerLeft)}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__eTpoA)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"70px"}
-                  loading={"lazy"}
-                  src={{
-                    src: _2Geda11XT8XtazA5Pq,
-                    fullWidth: 512,
-                    fullHeight: 516,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-
-              <div
-                data-plasmic-name={"headerRight"}
-                data-plasmic-override={overrides.headerRight}
-                className={classNames(projectcss.all, sty.headerRight)}
-              >
-                {(
-                  hasVariant(globalVariants, "screen", "mobile") ? true : true
-                ) ? (
-                  <button
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.button,
-                      projectcss.__wab_text,
-                      sty.button__oxyGy
-                    )}
-                  >
-                    {"Sign in"}
-                  </button>
-                ) : null}
-                {(
-                  hasVariant(globalVariants, "screen", "mobile") ? true : true
-                ) ? (
-                  <button
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.button,
-                      projectcss.__wab_text,
-                      sty.button___9ZNar
-                    )}
-                  >
-                    {"Sign up"}
-                  </button>
-                ) : null}
-              </div>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__eTpoA)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"70px"}
+                loading={"lazy"}
+                src={{
+                  src: _2Geda11XT8XtazA5Pq,
+                  fullWidth: 512,
+                  fullHeight: 516,
+                  aspectRatio: undefined
+                }}
+              />
             </div>
 
-            {true ? (
-              <main
-                data-plasmic-name={"main"}
-                data-plasmic-override={overrides.main}
-                className={classNames(projectcss.all, sty.main)}
-              >
-                <MainLeft
-                  data-plasmic-name={"mainLeft"}
-                  data-plasmic-override={overrides.mainLeft}
-                  className={classNames("__wab_instance", sty.mainLeft)}
-                />
+            <div
+              data-plasmic-name={"headerRight"}
+              data-plasmic-override={overrides.headerRight}
+              className={classNames(projectcss.all, sty.headerRight)}
+            >
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <button
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.button,
+                    projectcss.__wab_text,
+                    sty.button__oxyGy
+                  )}
+                >
+                  {"Sign in"}
+                </button>
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <button
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.button,
+                    projectcss.__wab_text,
+                    sty.button___9ZNar
+                  )}
+                >
+                  {"Sign up"}
+                </button>
+              ) : null}
+            </div>
+          </div>
 
-                {(
-                  hasVariant(globalVariants, "screen", "mobile") ? true : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"mainRight"}
-                    data-plasmic-override={overrides.mainRight}
-                    className={classNames(projectcss.all, sty.mainRight)}
-                  >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobile")
-                        ? true
-                        : true
-                    ) ? (
-                      <div
-                        data-plasmic-name={"gridContainer"}
-                        data-plasmic-override={overrides.gridContainer}
-                        className={classNames(
-                          projectcss.all,
-                          sty.gridContainer
-                        )}
-                      >
-                        {true ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__timb7
-                            )}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___7JUR
-                              )}
-                            >
-                              {"All Features here"}
-                            </div>
-                          </div>
-                        ) : null}
+          {true ? (
+            <main
+              data-plasmic-name={"main"}
+              data-plasmic-override={overrides.main}
+              className={classNames(projectcss.all, sty.main)}
+            >
+              <MainLeft
+                data-plasmic-name={"mainLeft"}
+                data-plasmic-override={overrides.mainLeft}
+                className={classNames("__wab_instance", sty.mainLeft)}
+              />
 
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <div
+                  data-plasmic-name={"mainRight"}
+                  data-plasmic-override={overrides.mainRight}
+                  className={classNames(projectcss.all, sty.mainRight)}
+                >
+                  {(
+                    hasVariant(globalVariants, "screen", "mobile") ? true : true
+                  ) ? (
+                    <div
+                      data-plasmic-name={"gridContainer"}
+                      data-plasmic-override={overrides.gridContainer}
+                      className={classNames(projectcss.all, sty.gridContainer)}
+                    >
+                      {true ? (
                         <div
-                          data-plasmic-name={"gridContent"}
-                          data-plasmic-override={overrides.gridContent}
                           className={classNames(
                             projectcss.all,
-                            sty.gridContent
+                            sty.freeBox__timb7
                           )}
                         >
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__xT8M
+                              projectcss.__wab_text,
+                              sty.text___7JUR
                             )}
                           >
+                            {"All Features here"}
+                          </div>
+                        </div>
+                      ) : null}
+
+                      <div
+                        data-plasmic-name={"gridContent"}
+                        data-plasmic-override={overrides.gridContent}
+                        className={classNames(projectcss.all, sty.gridContent)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__xT8M
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__jGaUs
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__hUBbd)}
+                              displayHeight={"auto"}
+                              displayMaxHeight={"none"}
+                              displayMaxWidth={"100%"}
+                              displayMinHeight={"0"}
+                              displayMinWidth={"0"}
+                              displayWidth={"auto"}
+                              loading={"lazy"}
+                              src={{
+                                src: signInRegisterSvgrepoCompngHbimMaPrc,
+                                fullWidth: 45,
+                                fullHeight: 45,
+                                aspectRatio: undefined
+                              }}
+                            />
+
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.freeBox__jGaUs
+                                projectcss.__wab_text,
+                                sty.text___3CU7R
                               )}
                             >
-                              <p.PlasmicImg
-                                alt={""}
-                                className={classNames(sty.img__hUBbd)}
-                                displayHeight={"auto"}
-                                displayMaxHeight={"none"}
-                                displayMaxWidth={"100%"}
-                                displayMinHeight={"0"}
-                                displayMinWidth={"0"}
-                                displayWidth={"auto"}
-                                loading={"lazy"}
-                                src={{
-                                  src: signInRegisterSvgrepoCompngHbimMaPrc,
-                                  fullWidth: 45,
-                                  fullHeight: 45,
-                                  aspectRatio: undefined
-                                }}
-                              />
-
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___3CU7R
-                                )}
-                              >
-                                {
-                                  "Become a Member by Creating a new account or\nsign-in as an existing user."
-                                }
-                              </div>
-                            </div>
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox___895Vf
-                              )}
-                            >
-                              <p.PlasmicImg
-                                alt={""}
-                                className={classNames(sty.img___1Uc8K)}
-                                displayHeight={"auto"}
-                                displayMaxHeight={"none"}
-                                displayMaxWidth={"100%"}
-                                displayMinHeight={"0"}
-                                displayMinWidth={"0"}
-                                displayWidth={"auto"}
-                                loading={"lazy"}
-                                src={{
-                                  src: chatSvgrepoCom1Png45Oy16YF,
-                                  fullWidth: 45,
-                                  fullHeight: 45,
-                                  aspectRatio: undefined
-                                }}
-                              />
-
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__zwIz5
-                                )}
-                              >
-                                {
-                                  "Chat Unlimited!\nShare images, videos, files\nin your conversation."
-                                }
-                              </div>
+                              {
+                                "Become a Member by Creating a new account or\nsign-in as an existing user."
+                              }
                             </div>
                           </div>
 
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox___0Tg9M
+                              sty.freeBox___895Vf
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img___1Uc8K)}
+                              displayHeight={"auto"}
+                              displayMaxHeight={"none"}
+                              displayMaxWidth={"100%"}
+                              displayMinHeight={"0"}
+                              displayMinWidth={"0"}
+                              displayWidth={"auto"}
+                              loading={"lazy"}
+                              src={{
+                                src: chatSvgrepoCom1Png45Oy16YF,
+                                fullWidth: 45,
+                                fullHeight: 45,
+                                aspectRatio: undefined
+                              }}
+                            />
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__zwIz5
+                              )}
+                            >
+                              {
+                                "Chat Unlimited!\nShare images, videos, files\nin your conversation."
+                              }
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___0Tg9M
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__stQqy
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__pPesF)}
+                              displayHeight={"auto"}
+                              displayMaxHeight={"none"}
+                              displayMaxWidth={"100%"}
+                              displayMinHeight={"0"}
+                              displayMinWidth={"0"}
+                              displayWidth={"auto"}
+                              loading={"lazy"}
+                              src={{
+                                src: newsSvgrepoCom1PngLaGvCN,
+                                fullWidth: 45,
+                                fullHeight: 45,
+                                aspectRatio: undefined
+                              }}
+                            />
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__frEs
+                              )}
+                            >
+                              {
+                                "Stay updated on\nPost and News carefully\nCurated your you."
+                              }
+                            </div>
+                          </div>
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__nT7SH
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__viIvw)}
+                              displayHeight={"auto"}
+                              displayMaxHeight={"none"}
+                              displayMaxWidth={"100%"}
+                              displayMinHeight={"0"}
+                              displayMinWidth={"0"}
+                              displayWidth={"auto"}
+                              loading={"lazy"}
+                              src={{
+                                src: groupPeopleSvgrepoCompngGlmYMNeM,
+                                fullWidth: 45,
+                                fullHeight: 45,
+                                aspectRatio: undefined
+                              }}
+                            />
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___0GW8M
+                              )}
+                            >
+                              {
+                                "Meet with People and Professionals in all\nsphere of Careers.\n"
+                              }
+                            </div>
+                          </div>
+                        </div>
+
+                        {(
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__qvn0I
                             )}
                           >
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.freeBox__stQqy
+                                sty.freeBox___5Yi5S
                               )}
                             >
                               <p.PlasmicImg
                                 alt={""}
-                                className={classNames(sty.img__pPesF)}
+                                className={classNames(sty.img__apMqd)}
                                 displayHeight={"auto"}
                                 displayMaxHeight={"none"}
                                 displayMaxWidth={"100%"}
@@ -297,7 +374,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                 displayWidth={"auto"}
                                 loading={"lazy"}
                                 src={{
-                                  src: newsSvgrepoCom1PngLaGvCN,
+                                  src: shopSvgrepoCompngIDz8Pdd8H,
                                   fullWidth: 45,
                                   fullHeight: 45,
                                   aspectRatio: undefined
@@ -308,11 +385,11 @@ function PlasmicHomepage__RenderFunc(props) {
                                 className={classNames(
                                   projectcss.all,
                                   projectcss.__wab_text,
-                                  sty.text__frEs
+                                  sty.text___2WTTn
                                 )}
                               >
                                 {
-                                  "Stay updated on\nPost and News carefully\nCurated your you."
+                                  "Outlet is your Marketplace.\nBuy and sell Goods at a touch.\nServices can also be posted."
                                 }
                               </div>
                             </div>
@@ -320,12 +397,12 @@ function PlasmicHomepage__RenderFunc(props) {
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.freeBox__nT7SH
+                                sty.freeBox___2QSe
                               )}
                             >
                               <p.PlasmicImg
                                 alt={""}
-                                className={classNames(sty.img__viIvw)}
+                                className={classNames(sty.img__ikiPd)}
                                 displayHeight={"auto"}
                                 displayMaxHeight={"none"}
                                 displayMaxWidth={"100%"}
@@ -334,7 +411,7 @@ function PlasmicHomepage__RenderFunc(props) {
                                 displayWidth={"auto"}
                                 loading={"lazy"}
                                 src={{
-                                  src: groupPeopleSvgrepoCompngGlmYMNeM,
+                                  src: connectionSvgrepoCompngQxj7Qesum,
                                   fullWidth: 45,
                                   fullHeight: 45,
                                   aspectRatio: undefined
@@ -345,112 +422,25 @@ function PlasmicHomepage__RenderFunc(props) {
                                 className={classNames(
                                   projectcss.all,
                                   projectcss.__wab_text,
-                                  sty.text___0GW8M
+                                  sty.text__iUmm
                                 )}
                               >
                                 {
-                                  "Meet with People and Professionals in all\nsphere of Careers.\n"
+                                  "Connect with People all over the world\n and reach out to more clients"
                                 }
                               </div>
                             </div>
                           </div>
-
-                          {(
-                            hasVariant(globalVariants, "screen", "mobile")
-                              ? true
-                              : true
-                          ) ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__qvn0I
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.freeBox___5Yi5S
-                                )}
-                              >
-                                <p.PlasmicImg
-                                  alt={""}
-                                  className={classNames(sty.img__apMqd)}
-                                  displayHeight={"auto"}
-                                  displayMaxHeight={"none"}
-                                  displayMaxWidth={"100%"}
-                                  displayMinHeight={"0"}
-                                  displayMinWidth={"0"}
-                                  displayWidth={"auto"}
-                                  loading={"lazy"}
-                                  src={{
-                                    src: shopSvgrepoCompngIDz8Pdd8H,
-                                    fullWidth: 45,
-                                    fullHeight: 45,
-                                    aspectRatio: undefined
-                                  }}
-                                />
-
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text___2WTTn
-                                  )}
-                                >
-                                  {
-                                    "Outlet is your Marketplace.\nBuy and sell Goods at a touch.\nServices can also be posted."
-                                  }
-                                </div>
-                              </div>
-
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.freeBox___2QSe
-                                )}
-                              >
-                                <p.PlasmicImg
-                                  alt={""}
-                                  className={classNames(sty.img__ikiPd)}
-                                  displayHeight={"auto"}
-                                  displayMaxHeight={"none"}
-                                  displayMaxWidth={"100%"}
-                                  displayMinHeight={"0"}
-                                  displayMinWidth={"0"}
-                                  displayWidth={"auto"}
-                                  loading={"lazy"}
-                                  src={{
-                                    src: connectionSvgrepoCompngQxj7Qesum,
-                                    fullWidth: 45,
-                                    fullHeight: 45,
-                                    aspectRatio: undefined
-                                  }}
-                                />
-
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__iUmm
-                                  )}
-                                >
-                                  {
-                                    "Connect with People all over the world\n and reach out to more clients"
-                                  }
-                                </div>
-                              </div>
-                            </div>
-                          ) : null}
-                        </div>
+                        ) : null}
                       </div>
-                    ) : null}
-                  </div>
-                ) : null}
-              </main>
-            ) : null}
-          </div>
-        </p.Stack>
-      </div>
+                    </div>
+                  ) : null}
+                </div>
+              ) : null}
+            </main>
+          ) : null}
+        </div>
+      </p.Stack>
     </React.Fragment>
   );
 }

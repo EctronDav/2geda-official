@@ -432,6 +432,19 @@
           "cssFilePath": "plasmic/2_geda/PlasmicPersonalDetails.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "5sVX8TQhxB",
+          "name": "Dashboard",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicDashboard.jsx",
+          "importSpec": {
+            "modulePath": "Dashboard.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicDashboard.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -771,6 +784,21 @@
           "id": "hSuOriKas",
           "name": "unsplash_pYWuOMhtc6k.png",
           "filePath": "plasmic/2_geda/images/unsplashPYWuOMhtc6Kpng.png"
+        },
+        {
+          "id": "C_fPPVC8s",
+          "name": "Image.png",
+          "filePath": "plasmic/2_geda/images/imagepng.png"
+        },
+        {
+          "id": "asa6YWWaw",
+          "name": "VideoCamera.png",
+          "filePath": "plasmic/2_geda/images/videoCamerapng.png"
+        },
+        {
+          "id": "jbiUkXsIu",
+          "name": "SmileySticker.png",
+          "filePath": "plasmic/2_geda/images/smileyStickerpng.png"
         }
       ],
       "indirect": false,
