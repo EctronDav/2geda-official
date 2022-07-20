@@ -8,6 +8,12 @@
   min-width: 0;
   padding: 8px;
 }
+@media (max-width: 900px) {
+  .root {
+    height: auto;
+    padding-bottom: 29px;
+  }
+}
 @media (min-width: 0px) and (max-width: 600px) {
   .root {
     padding-bottom: 18px;

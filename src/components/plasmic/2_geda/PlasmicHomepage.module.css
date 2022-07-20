@@ -92,6 +92,11 @@
   min-width: 0;
   padding: 8px;
 }
+@media (max-width: 900px) {
+  .headerRight {
+    height: auto;
+  }
+}
 .button__oxyGy {
   position: relative;
   width: 30%;
@@ -130,6 +135,14 @@
   background: url("./images/rectangle263.jpeg") top 50% left 50% / cover repeat;
   flex-direction: row;
   padding: 8px;
+}
+@media (max-width: 900px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex-column-gap: 0px;
+  }
 }
 @media (min-width: 0px) and (max-width: 600px) {
   .main {
@@ -177,7 +190,9 @@
 @media (max-width: 900px) {
   .gridContainer {
     width: 90%;
-    margin-left: -14%;
+    margin-left: -4%;
+    margin-right: auto;
+    margin-bottom: 15%;
   }
 }
 @media (min-width: 0px) and (max-width: 600px) {
