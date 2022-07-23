@@ -13,8 +13,10 @@ import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { useScreenVariants as useScreenVariantsgcBBykOvh4Vq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: gcB_bykOvh4VQ/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_2_geda.module.css"; // plasmic-import: ovjdXhydzXTq3Bc7u9wCpt/projectcss
 import sty from "./PlasmicAuthBox2.module.css"; // plasmic-import: CBPLLuL4Oc/css
@@ -28,6 +30,10 @@ function PlasmicAuthBox2__RenderFunc(props) {
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsgcBBykOvh4Vq()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}

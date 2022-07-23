@@ -41,98 +41,94 @@ function PlasmicSignup__RenderFunc(props) {
 
   return (
     <React.Fragment>
-      <div className={projectcss.plasmic_page_wrapper}>
+      <div
+        data-plasmic-name={"root"}
+        data-plasmic-override={overrides.root}
+        data-plasmic-root={true}
+        data-plasmic-for-node={forNode}
+        className={classNames(
+          projectcss.all,
+          projectcss.root_reset,
+          projectcss.plasmic_default_styles,
+          projectcss.plasmic_mixins,
+          projectcss.plasmic_tokens,
+          sty.root
+        )}
+      >
         <div
-          data-plasmic-name={"root"}
-          data-plasmic-override={overrides.root}
-          data-plasmic-root={true}
-          data-plasmic-for-node={forNode}
-          className={classNames(
-            projectcss.all,
-            projectcss.root_reset,
-            projectcss.plasmic_default_styles,
-            projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            sty.root
-          )}
+          data-plasmic-name={"container"}
+          data-plasmic-override={overrides.container}
+          className={classNames(projectcss.all, sty.container)}
         >
           <div
-            data-plasmic-name={"container"}
-            data-plasmic-override={overrides.container}
-            className={classNames(projectcss.all, sty.container)}
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames(projectcss.all, sty.header)}
           >
             <div
-              data-plasmic-name={"header"}
-              data-plasmic-override={overrides.header}
-              className={classNames(projectcss.all, sty.header)}
+              data-plasmic-name={"headerLeft"}
+              data-plasmic-override={overrides.headerLeft}
+              className={classNames(projectcss.all, sty.headerLeft)}
             >
-              <div
-                data-plasmic-name={"headerLeft"}
-                data-plasmic-override={overrides.headerLeft}
-                className={classNames(projectcss.all, sty.headerLeft)}
-              >
-                <p.PlasmicImg
-                  data-plasmic-name={"img"}
-                  data-plasmic-override={overrides.img}
-                  alt={""}
-                  className={classNames(sty.img)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"60px"}
-                  loading={"lazy"}
-                  src={{
-                    src: _2Geda11XT8XtazA5Pq,
-                    fullWidth: 512,
-                    fullHeight: 516,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-
-              <div
-                data-plasmic-name={"headerRight"}
-                data-plasmic-override={overrides.headerRight}
-                className={classNames(projectcss.all, sty.headerRight)}
-              >
-                <button
-                  data-plasmic-name={"button"}
-                  data-plasmic-override={overrides.button}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.button,
-                    projectcss.__wab_text,
-                    sty.button
-                  )}
-                >
-                  {"Sign in"}
-                </button>
-              </div>
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"60px"}
+                loading={"lazy"}
+                src={{
+                  src: _2Geda11XT8XtazA5Pq,
+                  fullWidth: 512,
+                  fullHeight: 516,
+                  aspectRatio: undefined
+                }}
+              />
             </div>
 
             <div
-              data-plasmic-name={"main"}
-              data-plasmic-override={overrides.main}
-              className={classNames(projectcss.all, sty.main)}
+              data-plasmic-name={"headerRight"}
+              data-plasmic-override={overrides.headerRight}
+              className={classNames(projectcss.all, sty.headerRight)}
             >
-              {(
-                hasVariant(globalVariants, "screen", "mobile") ? true : true
-              ) ? (
-                <MainLeft
-                  data-plasmic-name={"mainLeft"}
-                  data-plasmic-override={overrides.mainLeft}
-                  className={classNames("__wab_instance", sty.mainLeft)}
-                />
-              ) : null}
-
-              <AuthBox2
-                data-plasmic-name={"authBox2"}
-                data-plasmic-override={overrides.authBox2}
-                className={classNames("__wab_instance", sty.authBox2)}
-              />
+              <button
+                data-plasmic-name={"button"}
+                data-plasmic-override={overrides.button}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.button,
+                  projectcss.__wab_text,
+                  sty.button
+                )}
+              >
+                {"Sign in"}
+              </button>
             </div>
+          </div>
+
+          <div
+            data-plasmic-name={"main"}
+            data-plasmic-override={overrides.main}
+            className={classNames(projectcss.all, sty.main)}
+          >
+            {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+              <MainLeft
+                data-plasmic-name={"mainLeft"}
+                data-plasmic-override={overrides.mainLeft}
+                className={classNames("__wab_instance", sty.mainLeft)}
+              />
+            ) : null}
+
+            <AuthBox2
+              data-plasmic-name={"authBox2"}
+              data-plasmic-override={overrides.authBox2}
+              className={classNames("__wab_instance", sty.authBox2)}
+            />
           </div>
         </div>
       </div>

@@ -157,7 +157,7 @@
   border-radius: 10px;
   margin: 1% 0% 0%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .button__pNd0 {
     width: 50%;
   }
@@ -229,7 +229,7 @@
   border-radius: 10px;
   margin: 1% 0% 0%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .textInput__jgVr1 {
     padding-right: 0px;
     width: 80%;
@@ -250,7 +250,7 @@
   border-radius: 10px;
   margin: 1% 0% 0%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .textInput__g9Ro {
     width: 80%;
     height: 40px;
@@ -284,7 +284,7 @@
   border-radius: 10px;
   margin: 1% 0% 0%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .textInput__fS610 {
     width: 80%;
     height: 40px;
@@ -318,7 +318,7 @@
   border-radius: 10px;
   margin: 1% 0% 0%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .textInput__wolwY {
     width: 80%;
     height: 40px;
@@ -352,7 +352,7 @@
   border-radius: 10px;
   margin: 1% 0% 0%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .textInput__bzlcr {
     width: 80%;
     height: 40px;
@@ -386,7 +386,7 @@
   border-radius: 10px;
   margin: 1% 0% 0%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .textInput__cmQwz {
     width: 80%;
     height: 40px;
@@ -420,7 +420,7 @@
   border-radius: 10px;
   margin: 1% 0% 0%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .dateInput {
     width: 80%;
     height: 40px;
@@ -454,7 +454,7 @@
   border-radius: 10px;
   margin: 4% 0% 0%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .button__dCejQ {
     width: 50%;
   }

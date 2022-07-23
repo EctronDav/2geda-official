@@ -92,7 +92,7 @@
   min-width: 0;
   padding: 8px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .headerRight {
     height: auto;
   }
@@ -136,7 +136,7 @@
   flex-direction: row;
   padding: 8px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .main {
     display: flex;
     flex-direction: column;
@@ -187,7 +187,7 @@
   padding: 0% 0% 6%;
   margin: -3% 10% 0% 2%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .gridContainer {
     width: 90%;
     margin-left: -4%;

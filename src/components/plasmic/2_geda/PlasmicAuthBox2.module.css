@@ -8,6 +8,14 @@
   position: relative;
   padding: 0px;
 }
+@media (max-width: 1000px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    flex-column-gap: 0px;
+    padding: 0%;
+  }
+}
 @media (min-width: 0px) and (max-width: 600px) {
   .root {
     width: 100%;
@@ -25,19 +33,39 @@
   box-shadow: inset 0px 5px 16px 5px #00000033;
   padding: 8px;
 }
+@media (max-width: 1000px) {
+  .authContainer {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: flex;
+    flex-direction: column;
+    flex-column-gap: 0px;
+  }
+}
 .authForm {
   display: flex;
   position: absolute;
   width: 90%;
-  height: 500px;
+  height: auto;
   max-width: 100%;
   left: 0px;
   top: 0px;
   flex-direction: column;
   border-radius: 15px;
-  padding: 8px;
+  padding: 8% 8% 14%;
   margin: 14% 0% 0% 5%;
   border: 4px solid #6e67672e;
+}
+@media (max-width: 1000px) {
+  .authForm {
+    position: relative;
+    left: auto;
+    top: auto;
+    padding-top: 0px;
+    margin-top: 5%;
+    padding-right: 0px;
+  }
 }
 @media (min-width: 0px) and (max-width: 600px) {
   .authForm {
