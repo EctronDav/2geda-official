@@ -18,24 +18,18 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import BusinessSidebar2 from "../../BusinessSidebar2"; // plasmic-import: q5yCu6U9uj/component
+import BusinessHeader from "../../BusinessHeader"; // plasmic-import: QNsWw2e-3G/component
+import SelectCategory from "../../SelectCategory"; // plasmic-import: 6HSr9YyfAE/component
 import { useScreenVariants as useScreenVariantsgcBBykOvh4Vq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: gcB_bykOvh4VQ/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_2_geda.module.css"; // plasmic-import: ovjdXhydzXTq3Bc7u9wCpt/projectcss
 import sty from "./PlasmicBusiness.module.css"; // plasmic-import: 05xKepNiDk/css
-import SignOutIcon from "./icons/PlasmicIcon__SignOut"; // plasmic-import: PV-wOd8DPw/icon
-import HouseIcon from "./icons/PlasmicIcon__House"; // plasmic-import: IdSuw-EtCN/icon
-import UserCircleIcon from "./icons/PlasmicIcon__UserCircle"; // plasmic-import: EP5zGWwJ1X/icon
-import Vector96Icon from "./icons/PlasmicIcon__Vector96"; // plasmic-import: 9n_rLIVux/icon
-import Vector97Icon from "./icons/PlasmicIcon__Vector97"; // plasmic-import: Rb7mIprIrQ/icon
-import BellIcon from "./icons/PlasmicIcon__Bell"; // plasmic-import: grfZD_Hnz9/icon
-import MagnifyingGlassIcon from "./icons/PlasmicIcon__MagnifyingGlass"; // plasmic-import: vPllSbWx1H/icon
 import StarIcon from "./icons/PlasmicIcon__Star"; // plasmic-import: sFbk0B4_vB/icon
 import Star2Icon from "./icons/PlasmicIcon__Star2"; // plasmic-import: w5JllfIkrJ/icon
 import Star3Icon from "./icons/PlasmicIcon__Star3"; // plasmic-import: Yl4IrwGzJU/icon
 import Star4Icon from "./icons/PlasmicIcon__Star4"; // plasmic-import: XQCQaCpB-/icon
 import Star5Icon from "./icons/PlasmicIcon__Star5"; // plasmic-import: 287U2hOue7/icon
-import storefrontXeuODvyCe from "./images/storefront.svg"; // plasmic-import: xeuODvy_ce/picture
-import unsplash5N3Jp9WajTsYDdWxVaitl from "./images/unsplash5N3Jp9WajTs.svg"; // plasmic-import: yDDWxVaitl/picture
 import unsplashINwSiOcNzMgEGqqCl3UoC2 from "./images/unsplashINwSiOcNzMg.jpeg"; // plasmic-import: EGqqCl3UoC2/picture
 
 export const PlasmicBusiness__VariantProps = new Array();
@@ -68,231 +62,11 @@ function PlasmicBusiness__RenderFunc(props) {
         )}
       >
         {(hasVariant(globalVariants, "screen", "tablet") ? true : true) ? (
-          <div
-            data-plasmic-name={"sidebar"}
-            data-plasmic-override={overrides.sidebar}
-            className={classNames(projectcss.all, sty.sidebar)}
-          >
-            {(hasVariant(globalVariants, "screen", "tablet") ? true : true) ? (
-              <div
-                data-plasmic-name={"group246"}
-                data-plasmic-override={overrides.group246}
-                className={classNames(projectcss.all, sty.group246)}
-              >
-                {false ? (
-                  <div
-                    data-plasmic-name={"group214"}
-                    data-plasmic-override={overrides.group214}
-                    className={classNames(projectcss.all, sty.group214)}
-                  >
-                    <SignOutIcon
-                      className={classNames(projectcss.all, sty.svg__jz15W)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__cCpyq
-                      )}
-                    >
-                      {"Sign out"}
-                    </div>
-                  </div>
-                ) : null}
-                {(
-                  hasVariant(globalVariants, "screen", "tablet") ? true : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"group244"}
-                    data-plasmic-override={overrides.group244}
-                    className={classNames(projectcss.all, sty.group244)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"group140"}
-                      data-plasmic-override={overrides.group140}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.group140)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"home"}
-                        data-plasmic-override={overrides.home}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.home)}
-                      >
-                        <HouseIcon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___4Ki1V
-                          )}
-                          role={"img"}
-                        />
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__qq74
-                          )}
-                        >
-                          {"Home"}
-                        </div>
-                      </p.Stack>
-
-                      <div
-                        data-plasmic-name={"marketplace"}
-                        data-plasmic-override={overrides.marketplace}
-                        className={classNames(projectcss.all, sty.marketplace)}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__ouIbj)}
-                          displayHeight={"32px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          loading={"lazy"}
-                          src={{
-                            src: storefrontXeuODvyCe,
-                            fullWidth: 32,
-                            fullHeight: 32,
-                            aspectRatio: 1
-                          }}
-                        />
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__kq5Wo
-                          )}
-                        >
-                          {"Business"}
-                        </div>
-                      </div>
-
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"profile"}
-                        data-plasmic-override={overrides.profile}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.profile)}
-                      >
-                        <UserCircleIcon
-                          className={classNames(projectcss.all, sty.svg__rm0V0)}
-                          role={"img"}
-                        />
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__lsGhg
-                          )}
-                        >
-                          {"People"}
-                        </div>
-                      </p.Stack>
-
-                      <div
-                        data-plasmic-name={"messages"}
-                        data-plasmic-override={overrides.messages}
-                        className={classNames(projectcss.all, sty.messages)}
-                      >
-                        <div
-                          data-plasmic-name={"messages2"}
-                          data-plasmic-override={overrides.messages2}
-                          className={classNames(projectcss.all, sty.messages2)}
-                        >
-                          <Vector96Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__osIM
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__bhRhI
-                            )}
-                          >
-                            {"Messages"}
-                          </div>
-                        </div>
-
-                        <Vector97Icon
-                          className={classNames(projectcss.all, sty.svg__sBeZu)}
-                          role={"img"}
-                        />
-
-                        <Vector97Icon
-                          className={classNames(projectcss.all, sty.svg__pcrhb)}
-                          role={"img"}
-                        />
-
-                        <Vector97Icon
-                          className={classNames(projectcss.all, sty.svg__nCupZ)}
-                          role={"img"}
-                        />
-                      </div>
-
-                      <div
-                        data-plasmic-name={"nofitication"}
-                        data-plasmic-override={overrides.nofitication}
-                        className={classNames(projectcss.all, sty.nofitication)}
-                      >
-                        <BellIcon
-                          className={classNames(projectcss.all, sty.svg__oaYsY)}
-                          role={"img"}
-                        />
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___6DNk2
-                          )}
-                        >
-                          {"Notification"}
-                        </div>
-                      </div>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"group245"}
-                      data-plasmic-override={overrides.group245}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.group245)}
-                    >
-                      <SignOutIcon
-                        className={classNames(projectcss.all, sty.svg__vObgZ)}
-                        role={"img"}
-                      />
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__jyFUu
-                        )}
-                      >
-                        {"Sign out"}
-                      </div>
-                    </p.Stack>
-                  </div>
-                ) : null}
-              </div>
-            ) : null}
-          </div>
+          <BusinessSidebar2
+            data-plasmic-name={"businessSidebar2"}
+            data-plasmic-override={overrides.businessSidebar2}
+            className={classNames("__wab_instance", sty.businessSidebar2)}
+          />
         ) : null}
 
         <div
@@ -300,90 +74,11 @@ function PlasmicBusiness__RenderFunc(props) {
           data-plasmic-override={overrides.main}
           className={classNames(projectcss.all, sty.main)}
         >
-          <div
-            data-plasmic-name={"header"}
-            data-plasmic-override={overrides.header}
-            className={classNames(projectcss.all, sty.header)}
-          >
-            <div
-              data-plasmic-name={"group243"}
-              data-plasmic-override={overrides.group243}
-              className={classNames(projectcss.all, sty.group243)}
-            >
-              <div
-                data-plasmic-name={"_2Geda11"}
-                data-plasmic-override={overrides._2Geda11}
-                className={classNames(projectcss.all, sty._2Geda11)}
-              />
-
-              <div
-                data-plasmic-name={"group10"}
-                data-plasmic-override={overrides.group10}
-                className={classNames(projectcss.all, sty.group10)}
-              >
-                <div
-                  data-plasmic-name={"group241"}
-                  data-plasmic-override={overrides.group241}
-                  className={classNames(projectcss.all, sty.group241)}
-                >
-                  <input
-                    data-plasmic-name={"rectangle30"}
-                    data-plasmic-override={overrides.rectangle30}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.input,
-                      sty.rectangle30
-                    )}
-                    placeholder={
-                      hasVariant(globalVariants, "screen", "mobile")
-                        ? "search"
-                        : "search name, place and business"
-                    }
-                    type={"text"}
-                  />
-
-                  <MagnifyingGlassIcon
-                    className={classNames(projectcss.all, sty.svg__p21AX)}
-                    role={"img"}
-                  />
-                </div>
-              </div>
-
-              <div
-                data-plasmic-name={"group242"}
-                data-plasmic-override={overrides.group242}
-                className={classNames(projectcss.all, sty.group242)}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__dr9K6)}
-                  displayHeight={"40px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"40px"}
-                  loading={"lazy"}
-                  src={{
-                    src: unsplash5N3Jp9WajTsYDdWxVaitl,
-                    fullWidth: 40,
-                    fullHeight: 40,
-                    aspectRatio: 1
-                  }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__lkVps
-                  )}
-                >
-                  {"My Profile"}
-                </div>
-              </div>
-            </div>
-          </div>
+          <BusinessHeader
+            data-plasmic-name={"businessHeader"}
+            data-plasmic-override={overrides.businessHeader}
+            className={classNames("__wab_instance", sty.businessHeader)}
+          />
 
           <div
             data-plasmic-name={"content"}
@@ -775,61 +470,11 @@ function PlasmicBusiness__RenderFunc(props) {
                 data-plasmic-override={overrides.widget}
                 className={classNames(projectcss.all, sty.widget)}
               >
-                <div
-                  data-plasmic-name={"categoriesBox"}
-                  data-plasmic-override={overrides.categoriesBox}
-                  className={classNames(projectcss.all, sty.categoriesBox)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___1stUp
-                    )}
-                  >
-                    {"Select Category"}
-                  </div>
-
-                  <div
-                    data-plasmic-name={"categoriesGrid"}
-                    data-plasmic-override={overrides.categoriesGrid}
-                    className={classNames(projectcss.all, sty.categoriesGrid)}
-                  >
-                    <div
-                      data-plasmic-name={"group116"}
-                      data-plasmic-override={overrides.group116}
-                      className={classNames(projectcss.all, sty.group116)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__bPCvX)}
-                        displayHeight={"38px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"38px"}
-                        loading={"lazy"}
-                        src={{
-                          src: unsplashINwSiOcNzMgEGqqCl3UoC2,
-                          fullWidth: 2880,
-                          fullHeight: 1620,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__m5YuW
-                        )}
-                      >
-                        {"Phones &\nDevices"}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <SelectCategory
+                  data-plasmic-name={"selectCategory"}
+                  data-plasmic-override={overrides.selectCategory}
+                  className={classNames("__wab_instance", sty.selectCategory)}
+                />
 
                 <div
                   data-plasmic-name={"inventoryList"}
@@ -920,26 +565,9 @@ function PlasmicBusiness__RenderFunc(props) {
 const PlasmicDescendants = {
   business: [
     "business",
-    "sidebar",
-    "group246",
-    "group214",
-    "group244",
-    "group140",
-    "home",
-    "marketplace",
-    "profile",
-    "messages",
-    "messages2",
-    "nofitication",
-    "group245",
+    "businessSidebar2",
     "main",
-    "header",
-    "group243",
-    "_2Geda11",
-    "group10",
-    "group241",
-    "rectangle30",
-    "group242",
+    "businessHeader",
     "content",
     "freeBox",
     "outletTop",
@@ -962,83 +590,17 @@ const PlasmicDescendants = {
     "group165",
     "rectangle219",
     "widget",
-    "categoriesBox",
-    "categoriesGrid",
-    "group116",
+    "selectCategory",
     "inventoryList",
     "list",
     "group166",
     "redNike"
   ],
 
-  sidebar: [
-    "sidebar",
-    "group246",
-    "group214",
-    "group244",
-    "group140",
-    "home",
-    "marketplace",
-    "profile",
-    "messages",
-    "messages2",
-    "nofitication",
-    "group245"
-  ],
-
-  group246: [
-    "group246",
-    "group214",
-    "group244",
-    "group140",
-    "home",
-    "marketplace",
-    "profile",
-    "messages",
-    "messages2",
-    "nofitication",
-    "group245"
-  ],
-
-  group214: ["group214"],
-  group244: [
-    "group244",
-    "group140",
-    "home",
-    "marketplace",
-    "profile",
-    "messages",
-    "messages2",
-    "nofitication",
-    "group245"
-  ],
-
-  group140: [
-    "group140",
-    "home",
-    "marketplace",
-    "profile",
-    "messages",
-    "messages2",
-    "nofitication"
-  ],
-
-  home: ["home"],
-  marketplace: ["marketplace"],
-  profile: ["profile"],
-  messages: ["messages", "messages2"],
-  messages2: ["messages2"],
-  nofitication: ["nofitication"],
-  group245: ["group245"],
+  businessSidebar2: ["businessSidebar2"],
   main: [
     "main",
-    "header",
-    "group243",
-    "_2Geda11",
-    "group10",
-    "group241",
-    "rectangle30",
-    "group242",
+    "businessHeader",
     "content",
     "freeBox",
     "outletTop",
@@ -1061,39 +623,14 @@ const PlasmicDescendants = {
     "group165",
     "rectangle219",
     "widget",
-    "categoriesBox",
-    "categoriesGrid",
-    "group116",
+    "selectCategory",
     "inventoryList",
     "list",
     "group166",
     "redNike"
   ],
 
-  header: [
-    "header",
-    "group243",
-    "_2Geda11",
-    "group10",
-    "group241",
-    "rectangle30",
-    "group242"
-  ],
-
-  group243: [
-    "group243",
-    "_2Geda11",
-    "group10",
-    "group241",
-    "rectangle30",
-    "group242"
-  ],
-
-  _2Geda11: ["_2Geda11"],
-  group10: ["group10", "group241", "rectangle30"],
-  group241: ["group241", "rectangle30"],
-  rectangle30: ["rectangle30"],
-  group242: ["group242"],
+  businessHeader: ["businessHeader"],
   content: [
     "content",
     "freeBox",
@@ -1117,9 +654,7 @@ const PlasmicDescendants = {
     "group165",
     "rectangle219",
     "widget",
-    "categoriesBox",
-    "categoriesGrid",
-    "group116",
+    "selectCategory",
     "inventoryList",
     "list",
     "group166",
@@ -1197,18 +732,14 @@ const PlasmicDescendants = {
   rectangle219: ["rectangle219"],
   widget: [
     "widget",
-    "categoriesBox",
-    "categoriesGrid",
-    "group116",
+    "selectCategory",
     "inventoryList",
     "list",
     "group166",
     "redNike"
   ],
 
-  categoriesBox: ["categoriesBox", "categoriesGrid", "group116"],
-  categoriesGrid: ["categoriesGrid", "group116"],
-  group116: ["group116"],
+  selectCategory: ["selectCategory"],
   inventoryList: ["inventoryList", "list", "group166", "redNike"],
   list: ["list", "group166", "redNike"],
   group166: ["group166", "redNike"],
@@ -1249,26 +780,9 @@ export const PlasmicBusiness = Object.assign(
   makeNodeComponent("business"),
   {
     // Helper components rendering sub-elements
-    sidebar: makeNodeComponent("sidebar"),
-    group246: makeNodeComponent("group246"),
-    group214: makeNodeComponent("group214"),
-    group244: makeNodeComponent("group244"),
-    group140: makeNodeComponent("group140"),
-    home: makeNodeComponent("home"),
-    marketplace: makeNodeComponent("marketplace"),
-    profile: makeNodeComponent("profile"),
-    messages: makeNodeComponent("messages"),
-    messages2: makeNodeComponent("messages2"),
-    nofitication: makeNodeComponent("nofitication"),
-    group245: makeNodeComponent("group245"),
+    businessSidebar2: makeNodeComponent("businessSidebar2"),
     main: makeNodeComponent("main"),
-    header: makeNodeComponent("header"),
-    group243: makeNodeComponent("group243"),
-    _2Geda11: makeNodeComponent("_2Geda11"),
-    group10: makeNodeComponent("group10"),
-    group241: makeNodeComponent("group241"),
-    rectangle30: makeNodeComponent("rectangle30"),
-    group242: makeNodeComponent("group242"),
+    businessHeader: makeNodeComponent("businessHeader"),
     content: makeNodeComponent("content"),
     freeBox: makeNodeComponent("freeBox"),
     outletTop: makeNodeComponent("outletTop"),
@@ -1291,9 +805,7 @@ export const PlasmicBusiness = Object.assign(
     group165: makeNodeComponent("group165"),
     rectangle219: makeNodeComponent("rectangle219"),
     widget: makeNodeComponent("widget"),
-    categoriesBox: makeNodeComponent("categoriesBox"),
-    categoriesGrid: makeNodeComponent("categoriesGrid"),
-    group116: makeNodeComponent("group116"),
+    selectCategory: makeNodeComponent("selectCategory"),
     inventoryList: makeNodeComponent("inventoryList"),
     list: makeNodeComponent("list"),
     group166: makeNodeComponent("group166"),

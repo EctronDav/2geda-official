@@ -1,0 +1,143 @@
+.root {
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  flex-direction: row;
+  position: relative;
+  padding: 0px;
+}
+.group243 {
+  width: 100%;
+  height: 84px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 2px 2px 16px 2px #00000040;
+}
+._2Geda11 {
+  background: url("./images/_2Geda11.png") center center / cover no-repeat;
+  width: 50px;
+  height: 57.14%;
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  margin: 0px 0px 0px -43px;
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  ._2Geda11 {
+    margin-left: -25px;
+  }
+}
+.group10 {
+  width: 40%;
+  height: 84px;
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group241 {
+  width: 433px;
+  height: 36px;
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-shrink: 0;
+  margin: 0% 0% 0% 47%;
+}
+@media (max-width: 1000px) {
+  .group241 {
+    margin-left: -2%;
+  }
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  .group241 {
+    width: 250px;
+    flex-shrink: 0;
+  }
+}
+.rectangle30 {
+  box-shadow: 0px 0px 0px 0.5px rgba(0, 0, 0, 0.4),
+    inset 0px 0px 0px 0.5px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding-left: 20px;
+  border-radius: 10px;
+  border-width: 0px;
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  .rectangle30 {
+    padding-left: 6px;
+    margin-left: -30px;
+  }
+}
+.svg {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  transform: translate(0px, -0.5px);
+  width: 17.5px;
+  height: 17.5px;
+  display: block;
+  top: 12px;
+  left: 397px;
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  .svg {
+    margin-left: -209px;
+  }
+}
+.group242 {
+  width: 42px;
+  height: 54px;
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-shrink: 0;
+}
+.img {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 40px;
+  height: 40px;
+  display: block !important;
+  top: 0%;
+  left: 4.76%;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.text {
+  display: block;
+  font-size: 9px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 81.86%;
+  left: 0%;
+  transform: translate(0px, -0.25px);
+}

@@ -458,6 +458,97 @@
           "cssFilePath": "plasmic/2_geda/PlasmicBusiness.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "0r3xSegb8up",
+          "name": "BusinessSidebar",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicBusinessSidebar.jsx",
+          "importSpec": {
+            "modulePath": "BusinessSidebar.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicBusinessSidebar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "q5yCu6U9uj",
+          "name": "BusinessSidebar2",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicBusinessSidebar2.jsx",
+          "importSpec": {
+            "modulePath": "BusinessSidebar2.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicBusinessSidebar2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "7WJwRnVAxlX",
+          "name": "DashboardSidebar",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicDashboardSidebar.jsx",
+          "importSpec": {
+            "modulePath": "DashboardSidebar.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicDashboardSidebar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "QNsWw2e-3G",
+          "name": "BusinessHeader",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicBusinessHeader.jsx",
+          "importSpec": {
+            "modulePath": "BusinessHeader.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicBusinessHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "D_xLN7HSDJ",
+          "name": "DashboardHeader",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicDashboardHeader.jsx",
+          "importSpec": {
+            "modulePath": "DashboardHeader.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicDashboardHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "6HSr9YyfAE",
+          "name": "SelectCategory",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicSelectCategory.jsx",
+          "importSpec": {
+            "modulePath": "SelectCategory.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicSelectCategory.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "WH3pMQ8XXI",
+          "name": "People",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicPeople.jsx",
+          "importSpec": {
+            "modulePath": "People.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicPeople.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -1522,6 +1613,11 @@
           "id": "bdNwHRhFw",
           "name": "unsplash:164_6wVEHfI",
           "filePath": "plasmic/2_geda/images/unsplash1646WVeHfI.jpeg"
+        },
+        {
+          "id": "nMzMkO7Zz",
+          "name": "Storefront.png",
+          "filePath": "plasmic/2_geda/images/storefrontpng.png"
         }
       ],
       "indirect": false,
