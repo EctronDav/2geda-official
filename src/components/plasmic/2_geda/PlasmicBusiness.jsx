@@ -21,6 +21,7 @@ import {
 import BusinessSidebar2 from "../../BusinessSidebar2"; // plasmic-import: q5yCu6U9uj/component
 import BusinessHeader from "../../BusinessHeader"; // plasmic-import: QNsWw2e-3G/component
 import SelectCategory from "../../SelectCategory"; // plasmic-import: 6HSr9YyfAE/component
+import InventoryList from "../../InventoryList"; // plasmic-import: Gn6XkLaEoG/component
 import { useScreenVariants as useScreenVariantsgcBBykOvh4Vq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: gcB_bykOvh4VQ/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_2_geda.module.css"; // plasmic-import: ovjdXhydzXTq3Bc7u9wCpt/projectcss
@@ -476,83 +477,11 @@ function PlasmicBusiness__RenderFunc(props) {
                   className={classNames("__wab_instance", sty.selectCategory)}
                 />
 
-                <div
+                <InventoryList
                   data-plasmic-name={"inventoryList"}
                   data-plasmic-override={overrides.inventoryList}
-                  className={classNames(projectcss.all, sty.inventoryList)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__megKa
-                    )}
-                  >
-                    {"My Inventory"}
-                  </div>
-
-                  <div
-                    data-plasmic-name={"list"}
-                    data-plasmic-override={overrides.list}
-                    className={classNames(projectcss.all, sty.list)}
-                  >
-                    <div
-                      data-plasmic-name={"group166"}
-                      data-plasmic-override={overrides.group166}
-                      className={classNames(projectcss.all, sty.group166)}
-                    >
-                      <div
-                        data-plasmic-name={"redNike"}
-                        data-plasmic-override={overrides.redNike}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.redNike
-                        )}
-                      >
-                        {"Red Nike "}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__vtDit
-                        )}
-                      >
-                        {"#2,000,000"}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__vetqv
-                        )}
-                      >
-                        {"Posted 24/02/2022"}
-                      </div>
-
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img___4HKfg)}
-                        displayHeight={"58px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"58px"}
-                        loading={"lazy"}
-                        src={{
-                          src: unsplashINwSiOcNzMgEGqqCl3UoC2,
-                          fullWidth: 2880,
-                          fullHeight: 1620,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  </div>
-                </div>
+                  className={classNames("__wab_instance", sty.inventoryList)}
+                />
               </div>
             ) : null}
           </div>
@@ -591,10 +520,7 @@ const PlasmicDescendants = {
     "rectangle219",
     "widget",
     "selectCategory",
-    "inventoryList",
-    "list",
-    "group166",
-    "redNike"
+    "inventoryList"
   ],
 
   businessSidebar2: ["businessSidebar2"],
@@ -624,10 +550,7 @@ const PlasmicDescendants = {
     "rectangle219",
     "widget",
     "selectCategory",
-    "inventoryList",
-    "list",
-    "group166",
-    "redNike"
+    "inventoryList"
   ],
 
   businessHeader: ["businessHeader"],
@@ -655,10 +578,7 @@ const PlasmicDescendants = {
     "rectangle219",
     "widget",
     "selectCategory",
-    "inventoryList",
-    "list",
-    "group166",
-    "redNike"
+    "inventoryList"
   ],
 
   freeBox: [
@@ -730,20 +650,9 @@ const PlasmicDescendants = {
   group164: ["group164", "group165", "rectangle219"],
   group165: ["group165", "rectangle219"],
   rectangle219: ["rectangle219"],
-  widget: [
-    "widget",
-    "selectCategory",
-    "inventoryList",
-    "list",
-    "group166",
-    "redNike"
-  ],
-
+  widget: ["widget", "selectCategory", "inventoryList"],
   selectCategory: ["selectCategory"],
-  inventoryList: ["inventoryList", "list", "group166", "redNike"],
-  list: ["list", "group166", "redNike"],
-  group166: ["group166", "redNike"],
-  redNike: ["redNike"]
+  inventoryList: ["inventoryList"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -807,9 +716,6 @@ export const PlasmicBusiness = Object.assign(
     widget: makeNodeComponent("widget"),
     selectCategory: makeNodeComponent("selectCategory"),
     inventoryList: makeNodeComponent("inventoryList"),
-    list: makeNodeComponent("list"),
-    group166: makeNodeComponent("group166"),
-    redNike: makeNodeComponent("redNike"),
     // Metadata about props expected for PlasmicBusiness
     internalVariantProps: PlasmicBusiness__VariantProps,
     internalArgProps: PlasmicBusiness__ArgProps

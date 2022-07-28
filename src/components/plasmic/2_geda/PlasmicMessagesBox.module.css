@@ -1,0 +1,127 @@
+.root {
+  width: 227px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-left-color: #6b6a6a;
+  border-left-style: solid;
+  border-right-color: #6b6a6a;
+  border-right-style: solid;
+  border-bottom-color: #6b6a6a;
+  border-bottom-style: solid;
+  padding-bottom: 8px;
+  position: relative;
+  border-width: 1px;
+}
+.group298 {
+  width: 226px;
+  height: 31px;
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-shrink: 0;
+}
+.rectangle209 {
+  background: rgba(0, 0, 47, 1);
+  width: 226px;
+  height: 31px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+}
+.text__nZe1Z {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 9px;
+  left: 13px;
+}
+.group148 {
+  width: 198px;
+  height: 44px;
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-top: 7px;
+  margin-left: 18px;
+  flex-shrink: 0;
+}
+.text__vvg6Z {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 7px;
+  left: 53px;
+}
+.text__vEllC {
+  display: block;
+  font-size: 8px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 22px;
+  left: 53px;
+  width: 115px;
+}
+.text___5S9PZ {
+  display: block;
+  font-size: 8px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 6px;
+  left: 177px;
+}
+.img {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 43px;
+  height: 44px;
+  display: block !important;
+  top: 0px;
+  left: 0px;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  transform: scale(0.9990125124341537, 0.9990075074918353)
+    rotate(-0.28676326876410735deg) skew(-0.05735167682688388deg, 0deg);
+  width: 201px;
+  height: 1px;
+  display: block;
+  transform-origin: top left;
+  top: auto;
+  left: auto;
+  flex-shrink: 0;
+}

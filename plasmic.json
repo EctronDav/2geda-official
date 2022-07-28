@@ -549,6 +549,110 @@
           "cssFilePath": "plasmic/2_geda/PlasmicPeople.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "Gn6XkLaEoG",
+          "name": "InventoryList",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicInventoryList.jsx",
+          "importSpec": {
+            "modulePath": "InventoryList.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicInventoryList.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "m2QxDfHQRWZ",
+          "name": "Profile",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicProfile.jsx",
+          "importSpec": {
+            "modulePath": "Profile.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicProfile.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "_Zq7sjOf7bc",
+          "name": "ManageBusiness",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicManageBusiness.jsx",
+          "importSpec": {
+            "modulePath": "ManageBusiness.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicManageBusiness.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "qZIz_oHbg2S",
+          "name": "BusinessDetails",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicBusinessDetails.jsx",
+          "importSpec": {
+            "modulePath": "BusinessDetails.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicBusinessDetails.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "5K0H0lW6HF",
+          "name": "MessagesBox",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicMessagesBox.jsx",
+          "importSpec": {
+            "modulePath": "MessagesBox.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicMessagesBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Dq6gvuXdNEn",
+          "name": "PostBox",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicPostBox.jsx",
+          "importSpec": {
+            "modulePath": "PostBox.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicPostBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "aD3gQOgm7t",
+          "name": "CommentBox",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicCommentBox.jsx",
+          "importSpec": {
+            "modulePath": "CommentBox.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicCommentBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "JchRVkrNpH-",
+          "name": "UserProfile",
+          "type": "managed",
+          "projectId": "ovjdXhydzXTq3Bc7u9wCpt",
+          "renderModuleFilePath": "plasmic/2_geda/PlasmicUserProfile.jsx",
+          "importSpec": {
+            "modulePath": "UserProfile.jsx"
+          },
+          "cssFilePath": "plasmic/2_geda/PlasmicUserProfile.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -1291,6 +1395,51 @@
           "id": "287U2hOue7",
           "name": "Star5Icon",
           "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Star5.jsx"
+        },
+        {
+          "id": "AAQ0Kadt_Y",
+          "name": "ListIcon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__List.jsx"
+        },
+        {
+          "id": "6cIognb6Hb",
+          "name": "Line29Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Line29.jsx"
+        },
+        {
+          "id": "Djirqaflo",
+          "name": "Line30Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Line30.jsx"
+        },
+        {
+          "id": "1SdF2d1aN",
+          "name": "Camera2Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Camera2.jsx"
+        },
+        {
+          "id": "W5VMX--tmZ",
+          "name": "Star6Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Star6.jsx"
+        },
+        {
+          "id": "SV_e28LHM",
+          "name": "Star7Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Star7.jsx"
+        },
+        {
+          "id": "-AXYjo2d_S",
+          "name": "Star8Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Star8.jsx"
+        },
+        {
+          "id": "20LYPBw4Ub",
+          "name": "Star9Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Star9.jsx"
+        },
+        {
+          "id": "IthMtVSlY9",
+          "name": "Star10Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Star10.jsx"
         }
       ],
       "images": [

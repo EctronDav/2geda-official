@@ -20,22 +20,17 @@ import {
 } from "@plasmicapp/react-web";
 import DashboardSidebar from "../../DashboardSidebar"; // plasmic-import: 7WJwRnVAxlX/component
 import DashboardHeader from "../../DashboardHeader"; // plasmic-import: D_xLN7HSDJ/component
+import PostBox from "../../PostBox"; // plasmic-import: Dq6gvuXdNEn/component
+import CommentBox from "../../CommentBox"; // plasmic-import: aD3gQOgm7t/component
 import SelectCategory from "../../SelectCategory"; // plasmic-import: 6HSr9YyfAE/component
+import MessagesBox from "../../MessagesBox"; // plasmic-import: 5K0H0lW6HF/component
 import { useScreenVariants as useScreenVariantsgcBBykOvh4Vq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: gcB_bykOvh4VQ/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_2_geda.module.css"; // plasmic-import: ovjdXhydzXTq3Bc7u9wCpt/projectcss
 import sty from "./PlasmicDashboard.module.css"; // plasmic-import: 5sVX8TQhxB/css
-import Line3Icon from "./icons/PlasmicIcon__Line3"; // plasmic-import: 048klyCSi/icon
 import imagepngCFPpvc8S from "./images/imagepng.png"; // plasmic-import: C_fPPVC8s/picture
 import videoCamerapngAsa6YwWaw from "./images/videoCamerapng.png"; // plasmic-import: asa6YWWaw/picture
 import smileyStickerpngJbiUkXsIu from "./images/smileyStickerpng.png"; // plasmic-import: jbiUkXsIu/picture
-import maskGrouppngXE1YnDtN from "./images/maskGrouppng.png"; // plasmic-import: xE1ynDtN-/picture
-import unsplashINwSiOcNzMgEGqqCl3UoC2 from "./images/unsplashINwSiOcNzMg.jpeg"; // plasmic-import: EGqqCl3UoC2/picture
-import likeSvgrepoCom1PngSIx1Fq6A from "./images/likeSvgrepoCom1Png.png"; // plasmic-import: S_IX1FQ6A/picture
-import commentDotsSvgrepoCompngFGbNXkfHo from "./images/commentDotsSvgrepoCompng.png"; // plasmic-import: FGbNXkfHO/picture
-import group1PngSeu39MuTw from "./images/group1Png.png"; // plasmic-import: seu39MuTw/picture
-import shareSvgrepoCom1Png7HVEk3STj from "./images/shareSvgrepoCom1Png.png"; // plasmic-import: 7hVEk3sTJ/picture
-import optionspngXQxydTHeC from "./images/optionspng.png"; // plasmic-import: xQxydTHeC/picture
 import ellipse20WFPavNohc from "./images/ellipse20.svg"; // plasmic-import: -wFPavNOHC/picture
 import ellipse25Fl0ULz14Q from "./images/ellipse25.svg"; // plasmic-import: fl0U_lz14q/picture
 import ellipse22LUqnlFsU0Q from "./images/ellipse22.svg"; // plasmic-import: LUqnlFsU0Q/picture
@@ -44,7 +39,6 @@ import ellipse2392CTrYBsQz from "./images/ellipse23.svg"; // plasmic-import: 92C
 import ellipse21Y9IZfEfRmY from "./images/ellipse21.svg"; // plasmic-import: y9IZfEfRmY/picture
 import ellipse24TGnei26Fio from "./images/ellipse24.svg"; // plasmic-import: TGnei26fio/picture
 import ellipse27Sok7Ktx2Uk from "./images/ellipse27.svg"; // plasmic-import: SOK7Ktx2Uk/picture
-import ellipse36MwUq7LJfJy from "./images/ellipse36.svg"; // plasmic-import: MWUq7LJfJY/picture
 
 export const PlasmicDashboard__VariantProps = new Array();
 
@@ -233,11 +227,13 @@ function PlasmicDashboard__RenderFunc(props) {
                           )}
                         >
                           <button
+                            data-plasmic-name={"button"}
+                            data-plasmic-override={overrides.button}
                             className={classNames(
                               projectcss.all,
                               projectcss.button,
                               projectcss.__wab_text,
-                              sty.button__pgHQd
+                              sty.button
                             )}
                           >
                             {"Post"}
@@ -246,387 +242,17 @@ function PlasmicDashboard__RenderFunc(props) {
                       </div>
                     </p.Stack>
 
-                    <div
+                    <PostBox
                       data-plasmic-name={"postBox"}
                       data-plasmic-override={overrides.postBox}
-                      className={classNames(projectcss.all, sty.postBox)}
-                    >
-                      <div
-                        data-plasmic-name={"postTop"}
-                        data-plasmic-override={overrides.postTop}
-                        className={classNames(projectcss.all, sty.postTop)}
-                      >
-                        <div
-                          data-plasmic-name={"postTopLeft"}
-                          data-plasmic-override={overrides.postTopLeft}
-                          className={classNames(
-                            projectcss.all,
-                            sty.postTopLeft
-                          )}
-                        >
-                          <p.PlasmicImg
-                            data-plasmic-name={"postUserPic"}
-                            data-plasmic-override={overrides.postUserPic}
-                            alt={""}
-                            className={classNames(sty.postUserPic)}
-                            displayHeight={"50px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"50px"}
-                            loading={"lazy"}
-                            src={{
-                              src: maskGrouppngXE1YnDtN,
-                              fullWidth: 239,
-                              fullHeight: 418,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </div>
+                      className={classNames("__wab_instance", sty.postBox)}
+                    />
 
-                        <div
-                          data-plasmic-name={"postTopRight"}
-                          data-plasmic-override={overrides.postTopRight}
-                          className={classNames(
-                            projectcss.all,
-                            sty.postTopRight
-                          )}
-                        >
-                          <div
-                            data-plasmic-name={"userInfo"}
-                            data-plasmic-override={overrides.userInfo}
-                            className={classNames(projectcss.all, sty.userInfo)}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___5W4P
-                              )}
-                            >
-                              {"Israel David"}
-                            </div>
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__qGsn
-                              )}
-                            >
-                              {"software developer"}
-                            </div>
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__lIwrW
-                              )}
-                            >
-                              {"Lagos, Nigeria"}
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"postDate"}
-                            data-plasmic-override={overrides.postDate}
-                            className={classNames(projectcss.all, sty.postDate)}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__jfjb3
-                              )}
-                            >
-                              {"1hr ago"}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div
-                        data-plasmic-name={"postMid"}
-                        data-plasmic-override={overrides.postMid}
-                        className={classNames(projectcss.all, sty.postMid)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__pIp8U
-                          )}
-                        >
-                          {
-                            "This is the Opportunity to jon the world Leading Tech professionals in 2022. All you need do is to register with the link below"
-                          }
-                        </div>
-
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img___8BgaS)}
-                          displayHeight={"300px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"90%"}
-                          loading={"lazy"}
-                          src={{
-                            src: unsplashINwSiOcNzMgEGqqCl3UoC2,
-                            fullWidth: 2880,
-                            fullHeight: 1620,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-
-                      <div
-                        data-plasmic-name={"postBottom"}
-                        data-plasmic-override={overrides.postBottom}
-                        className={classNames(projectcss.all, sty.postBottom)}
-                      >
-                        <div
-                          data-plasmic-name={"postBottomLeft"}
-                          data-plasmic-override={overrides.postBottomLeft}
-                          className={classNames(
-                            projectcss.all,
-                            sty.postBottomLeft
-                          )}
-                        >
-                          <div
-                            data-plasmic-name={"likePost"}
-                            data-plasmic-override={overrides.likePost}
-                            className={classNames(projectcss.all, sty.likePost)}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__f4YLh)}
-                              displayHeight={"20px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"20px"}
-                              loading={"lazy"}
-                              src={{
-                                src: likeSvgrepoCom1PngSIx1Fq6A,
-                                fullWidth: 27,
-                                fullHeight: 27,
-                                aspectRatio: undefined
-                              }}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__z8LOn
-                              )}
-                            >
-                              {"1.3k"}
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"commentPost"}
-                            data-plasmic-override={overrides.commentPost}
-                            className={classNames(
-                              projectcss.all,
-                              sty.commentPost
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__heNof)}
-                              displayHeight={"20px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"20px"}
-                              loading={"lazy"}
-                              src={{
-                                src: commentDotsSvgrepoCompngFGbNXkfHo,
-                                fullWidth: 27,
-                                fullHeight: 27,
-                                aspectRatio: undefined
-                              }}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__zvNm3
-                              )}
-                            >
-                              {"1.3k"}
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"dislikePost"}
-                            data-plasmic-override={overrides.dislikePost}
-                            className={classNames(
-                              projectcss.all,
-                              sty.dislikePost
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__cOhGz)}
-                              displayHeight={"20px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"20px"}
-                              loading={"lazy"}
-                              src={{
-                                src: group1PngSeu39MuTw,
-                                fullWidth: 26,
-                                fullHeight: 26,
-                                aspectRatio: undefined
-                              }}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__g09NU
-                              )}
-                            >
-                              {"1.3k"}
-                            </div>
-                          </div>
-
-                          <div
-                            data-plasmic-name={"repostPost"}
-                            data-plasmic-override={overrides.repostPost}
-                            className={classNames(
-                              projectcss.all,
-                              sty.repostPost
-                            )}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__qo6O5)}
-                              displayHeight={"20px"}
-                              displayMaxHeight={"none"}
-                              displayMaxWidth={"100%"}
-                              displayMinHeight={"0"}
-                              displayMinWidth={"0"}
-                              displayWidth={"20px"}
-                              loading={"lazy"}
-                              src={{
-                                src: shareSvgrepoCom1Png7HVEk3STj,
-                                fullWidth: 27,
-                                fullHeight: 27,
-                                aspectRatio: undefined
-                              }}
-                            />
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__kfk2A
-                              )}
-                            >
-                              {"1.3k"}
-                            </div>
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"postBottomRight"}
-                          data-plasmic-override={overrides.postBottomRight}
-                          className={classNames(
-                            projectcss.all,
-                            sty.postBottomRight
-                          )}
-                        >
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img__ovspt)}
-                            displayHeight={"auto"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"auto"}
-                            loading={"lazy"}
-                            src={{
-                              src: optionspngXQxydTHeC,
-                              fullWidth: 32,
-                              fullHeight: 10,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <p.Stack
-                      as={"div"}
+                    <CommentBox
                       data-plasmic-name={"commentBox"}
                       data-plasmic-override={overrides.commentBox}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.commentBox)}
-                    >
-                      <div
-                        data-plasmic-name={"comment"}
-                        data-plasmic-override={overrides.comment}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.comment
-                        )}
-                      >
-                        {"Comment"}
-                      </div>
-
-                      <input
-                        data-plasmic-name={"textInput"}
-                        data-plasmic-override={
-                          overrides.textInput ?? overrides.textbox
-                        }
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.input,
-                          sty.textInput
-                        )}
-                        placeholder={"Enter your comment here"}
-                        size={1}
-                        type={"text"}
-                        value={""}
-                      />
-
-                      <button
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.button,
-                          projectcss.__wab_text,
-                          sty.button__xgjZi
-                        )}
-                      >
-                        {"Comment"}
-                      </button>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__oVky3
-                        )}
-                      >
-                        {"See all comments..."}
-                      </div>
-                    </p.Stack>
+                      className={classNames("__wab_instance", sty.commentBox)}
+                    />
                   </div>
                 </div>
 
@@ -867,99 +493,14 @@ function PlasmicDashboard__RenderFunc(props) {
                       data-plasmic-override={overrides.messages2}
                       className={classNames(projectcss.all, sty.messages2)}
                     >
-                      <div
-                        data-plasmic-name={"group297"}
-                        data-plasmic-override={overrides.group297}
-                        className={classNames(projectcss.all, sty.group297)}
-                      >
-                        <div
-                          data-plasmic-name={"group298"}
-                          data-plasmic-override={overrides.group298}
-                          className={classNames(projectcss.all, sty.group298)}
-                        >
-                          <div
-                            data-plasmic-name={"rectangle209"}
-                            data-plasmic-override={overrides.rectangle209}
-                            className={classNames(
-                              projectcss.all,
-                              sty.rectangle209
-                            )}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__ovtDs
-                            )}
-                          >
-                            {"Messages"}
-                          </div>
-                        </div>
-
-                        <div
-                          data-plasmic-name={"group148"}
-                          data-plasmic-override={overrides.group148}
-                          className={classNames(projectcss.all, sty.group148)}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__r3Emr
-                            )}
-                          >
-                            {"Abraham Adesanya"}
-                          </div>
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__ztA2D
-                            )}
-                          >
-                            {
-                              "How was your flight Joe, i couldnt text last night"
-                            }
-                          </div>
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___8Podt
-                            )}
-                          >
-                            {"12:00"}
-                          </div>
-
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img__wh9Mk)}
-                            displayHeight={"44px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"43px"}
-                            loading={"lazy"}
-                            src={{
-                              src: ellipse36MwUq7LJfJy,
-                              fullWidth: 43,
-                              fullHeight: 44,
-                              aspectRatio: 0.977273
-                            }}
-                          />
-                        </div>
-
-                        <Line3Icon
-                          data-plasmic-name={"svg"}
-                          data-plasmic-override={overrides.svg}
-                          className={classNames(projectcss.all, sty.svg)}
-                          role={"img"}
-                        />
-                      </div>
+                      <MessagesBox
+                        data-plasmic-name={"messagesBox"}
+                        data-plasmic-override={overrides.messagesBox}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.messagesBox
+                        )}
+                      />
                     </div>
                   </div>
                 ) : null}
@@ -998,25 +539,9 @@ const PlasmicDescendants = {
     "uploadButtons",
     "uploadLeft",
     "uploadRight",
+    "button",
     "postBox",
-    "postTop",
-    "postTopLeft",
-    "postUserPic",
-    "postTopRight",
-    "userInfo",
-    "postDate",
-    "postMid",
-    "postBottom",
-    "postBottomLeft",
-    "likePost",
-    "commentPost",
-    "dislikePost",
-    "repostPost",
-    "postBottomRight",
     "commentBox",
-    "comment",
-    "textInput",
-    "textbox",
     "contentMainRight",
     "selectCategory",
     "dashboardFollowers",
@@ -1025,11 +550,7 @@ const PlasmicDescendants = {
     "group296",
     "rectangle208",
     "messages2",
-    "group297",
-    "group298",
-    "rectangle209",
-    "group148",
-    "svg",
+    "messagesBox",
     "bottomNav"
   ],
 
@@ -1047,25 +568,9 @@ const PlasmicDescendants = {
     "uploadButtons",
     "uploadLeft",
     "uploadRight",
+    "button",
     "postBox",
-    "postTop",
-    "postTopLeft",
-    "postUserPic",
-    "postTopRight",
-    "userInfo",
-    "postDate",
-    "postMid",
-    "postBottom",
-    "postBottomLeft",
-    "likePost",
-    "commentPost",
-    "dislikePost",
-    "repostPost",
-    "postBottomRight",
     "commentBox",
-    "comment",
-    "textInput",
-    "textbox",
     "contentMainRight",
     "selectCategory",
     "dashboardFollowers",
@@ -1074,11 +579,7 @@ const PlasmicDescendants = {
     "group296",
     "rectangle208",
     "messages2",
-    "group297",
-    "group298",
-    "rectangle209",
-    "group148",
-    "svg",
+    "messagesBox",
     "bottomNav"
   ],
 
@@ -1095,25 +596,9 @@ const PlasmicDescendants = {
     "uploadButtons",
     "uploadLeft",
     "uploadRight",
+    "button",
     "postBox",
-    "postTop",
-    "postTopLeft",
-    "postUserPic",
-    "postTopRight",
-    "userInfo",
-    "postDate",
-    "postMid",
-    "postBottom",
-    "postBottomLeft",
-    "likePost",
-    "commentPost",
-    "dislikePost",
-    "repostPost",
-    "postBottomRight",
     "commentBox",
-    "comment",
-    "textInput",
-    "textbox",
     "contentMainRight",
     "selectCategory",
     "dashboardFollowers",
@@ -1122,11 +607,7 @@ const PlasmicDescendants = {
     "group296",
     "rectangle208",
     "messages2",
-    "group297",
-    "group298",
-    "rectangle209",
-    "group148",
-    "svg",
+    "messagesBox",
     "bottomNav"
   ],
 
@@ -1141,25 +622,9 @@ const PlasmicDescendants = {
     "uploadButtons",
     "uploadLeft",
     "uploadRight",
+    "button",
     "postBox",
-    "postTop",
-    "postTopLeft",
-    "postUserPic",
-    "postTopRight",
-    "userInfo",
-    "postDate",
-    "postMid",
-    "postBottom",
-    "postBottomLeft",
-    "likePost",
-    "commentPost",
-    "dislikePost",
-    "repostPost",
-    "postBottomRight",
     "commentBox",
-    "comment",
-    "textInput",
-    "textbox",
     "contentMainRight",
     "selectCategory",
     "dashboardFollowers",
@@ -1168,11 +633,7 @@ const PlasmicDescendants = {
     "group296",
     "rectangle208",
     "messages2",
-    "group297",
-    "group298",
-    "rectangle209",
-    "group148",
-    "svg"
+    "messagesBox"
   ],
 
   random: ["random"],
@@ -1184,25 +645,9 @@ const PlasmicDescendants = {
     "uploadButtons",
     "uploadLeft",
     "uploadRight",
+    "button",
     "postBox",
-    "postTop",
-    "postTopLeft",
-    "postUserPic",
-    "postTopRight",
-    "userInfo",
-    "postDate",
-    "postMid",
-    "postBottom",
-    "postBottomLeft",
-    "likePost",
-    "commentPost",
-    "dislikePost",
-    "repostPost",
-    "postBottomRight",
-    "commentBox",
-    "comment",
-    "textInput",
-    "textbox"
+    "commentBox"
   ],
 
   contentMainLeft: [
@@ -1212,25 +657,9 @@ const PlasmicDescendants = {
     "uploadButtons",
     "uploadLeft",
     "uploadRight",
+    "button",
     "postBox",
-    "postTop",
-    "postTopLeft",
-    "postUserPic",
-    "postTopRight",
-    "userInfo",
-    "postDate",
-    "postMid",
-    "postBottom",
-    "postBottomLeft",
-    "likePost",
-    "commentPost",
-    "dislikePost",
-    "repostPost",
-    "postBottomRight",
-    "commentBox",
-    "comment",
-    "textInput",
-    "textbox"
+    "commentBox"
   ],
 
   uploadBox: [
@@ -1238,72 +667,17 @@ const PlasmicDescendants = {
     "textarea",
     "uploadButtons",
     "uploadLeft",
-    "uploadRight"
+    "uploadRight",
+    "button"
   ],
 
   textarea: ["textarea"],
-  uploadButtons: ["uploadButtons", "uploadLeft", "uploadRight"],
+  uploadButtons: ["uploadButtons", "uploadLeft", "uploadRight", "button"],
   uploadLeft: ["uploadLeft"],
-  uploadRight: ["uploadRight"],
-  postBox: [
-    "postBox",
-    "postTop",
-    "postTopLeft",
-    "postUserPic",
-    "postTopRight",
-    "userInfo",
-    "postDate",
-    "postMid",
-    "postBottom",
-    "postBottomLeft",
-    "likePost",
-    "commentPost",
-    "dislikePost",
-    "repostPost",
-    "postBottomRight"
-  ],
-
-  postTop: [
-    "postTop",
-    "postTopLeft",
-    "postUserPic",
-    "postTopRight",
-    "userInfo",
-    "postDate"
-  ],
-
-  postTopLeft: ["postTopLeft", "postUserPic"],
-  postUserPic: ["postUserPic"],
-  postTopRight: ["postTopRight", "userInfo", "postDate"],
-  userInfo: ["userInfo"],
-  postDate: ["postDate"],
-  postMid: ["postMid"],
-  postBottom: [
-    "postBottom",
-    "postBottomLeft",
-    "likePost",
-    "commentPost",
-    "dislikePost",
-    "repostPost",
-    "postBottomRight"
-  ],
-
-  postBottomLeft: [
-    "postBottomLeft",
-    "likePost",
-    "commentPost",
-    "dislikePost",
-    "repostPost"
-  ],
-
-  likePost: ["likePost"],
-  commentPost: ["commentPost"],
-  dislikePost: ["dislikePost"],
-  repostPost: ["repostPost"],
-  postBottomRight: ["postBottomRight"],
-  commentBox: ["commentBox", "comment", "textInput", "textbox"],
-  comment: ["comment"],
-  textInput: ["textInput", "textbox"],
+  uploadRight: ["uploadRight", "button"],
+  button: ["button"],
+  postBox: ["postBox"],
+  commentBox: ["commentBox"],
   contentMainRight: [
     "contentMainRight",
     "selectCategory",
@@ -1313,11 +687,7 @@ const PlasmicDescendants = {
     "group296",
     "rectangle208",
     "messages2",
-    "group297",
-    "group298",
-    "rectangle209",
-    "group148",
-    "svg"
+    "messagesBox"
   ],
 
   selectCategory: ["selectCategory"],
@@ -1333,20 +703,8 @@ const PlasmicDescendants = {
   rectangle301: ["rectangle301"],
   group296: ["group296", "rectangle208"],
   rectangle208: ["rectangle208"],
-  messages2: [
-    "messages2",
-    "group297",
-    "group298",
-    "rectangle209",
-    "group148",
-    "svg"
-  ],
-
-  group297: ["group297", "group298", "rectangle209", "group148", "svg"],
-  group298: ["group298", "rectangle209"],
-  rectangle209: ["rectangle209"],
-  group148: ["group148"],
-  svg: ["svg"],
+  messages2: ["messages2", "messagesBox"],
+  messagesBox: ["messagesBox"],
   bottomNav: ["bottomNav"]
 };
 
@@ -1397,24 +755,9 @@ export const PlasmicDashboard = Object.assign(
     uploadButtons: makeNodeComponent("uploadButtons"),
     uploadLeft: makeNodeComponent("uploadLeft"),
     uploadRight: makeNodeComponent("uploadRight"),
+    button: makeNodeComponent("button"),
     postBox: makeNodeComponent("postBox"),
-    postTop: makeNodeComponent("postTop"),
-    postTopLeft: makeNodeComponent("postTopLeft"),
-    postUserPic: makeNodeComponent("postUserPic"),
-    postTopRight: makeNodeComponent("postTopRight"),
-    userInfo: makeNodeComponent("userInfo"),
-    postDate: makeNodeComponent("postDate"),
-    postMid: makeNodeComponent("postMid"),
-    postBottom: makeNodeComponent("postBottom"),
-    postBottomLeft: makeNodeComponent("postBottomLeft"),
-    likePost: makeNodeComponent("likePost"),
-    commentPost: makeNodeComponent("commentPost"),
-    dislikePost: makeNodeComponent("dislikePost"),
-    repostPost: makeNodeComponent("repostPost"),
-    postBottomRight: makeNodeComponent("postBottomRight"),
     commentBox: makeNodeComponent("commentBox"),
-    comment: makeNodeComponent("comment"),
-    textInput: makeNodeComponent("textInput"),
     contentMainRight: makeNodeComponent("contentMainRight"),
     selectCategory: makeNodeComponent("selectCategory"),
     dashboardFollowers: makeNodeComponent("dashboardFollowers"),
@@ -1423,11 +766,7 @@ export const PlasmicDashboard = Object.assign(
     group296: makeNodeComponent("group296"),
     rectangle208: makeNodeComponent("rectangle208"),
     messages2: makeNodeComponent("messages2"),
-    group297: makeNodeComponent("group297"),
-    group298: makeNodeComponent("group298"),
-    rectangle209: makeNodeComponent("rectangle209"),
-    group148: makeNodeComponent("group148"),
-    svg: makeNodeComponent("svg"),
+    messagesBox: makeNodeComponent("messagesBox"),
     bottomNav: makeNodeComponent("bottomNav"),
     // Metadata about props expected for PlasmicDashboard
     internalVariantProps: PlasmicDashboard__VariantProps,
