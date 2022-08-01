@@ -1440,6 +1440,36 @@
           "id": "IthMtVSlY9",
           "name": "Star10Icon",
           "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Star10.jsx"
+        },
+        {
+          "id": "UBzSFCsqKA",
+          "name": "House2Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__House2.jsx"
+        },
+        {
+          "id": "JTFEUy6Cm",
+          "name": "Storefront2Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Storefront2.jsx"
+        },
+        {
+          "id": "16FxAcX7bS",
+          "name": "Vector98Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Vector98.jsx"
+        },
+        {
+          "id": "Kia4anGgTs",
+          "name": "Vector99Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Vector99.jsx"
+        },
+        {
+          "id": "mRSf-KBLs",
+          "name": "Bell2Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__Bell2.jsx"
+        },
+        {
+          "id": "PDxXU3RZq9",
+          "name": "UserCircle2Icon",
+          "moduleFilePath": "plasmic/2_geda/icons/PlasmicIcon__UserCircle2.jsx"
         }
       ],
       "images": [

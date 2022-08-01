@@ -28,6 +28,12 @@ import { useScreenVariants as useScreenVariantsgcBBykOvh4Vq } from "./PlasmicGlo
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_2_geda.module.css"; // plasmic-import: ovjdXhydzXTq3Bc7u9wCpt/projectcss
 import sty from "./PlasmicDashboard.module.css"; // plasmic-import: 5sVX8TQhxB/css
+import House2Icon from "./icons/PlasmicIcon__House2"; // plasmic-import: UBzSFCsqKA/icon
+import Storefront2Icon from "./icons/PlasmicIcon__Storefront2"; // plasmic-import: JTFEUy6Cm/icon
+import Vector98Icon from "./icons/PlasmicIcon__Vector98"; // plasmic-import: 16FxAcX7bS/icon
+import Vector99Icon from "./icons/PlasmicIcon__Vector99"; // plasmic-import: Kia4anGgTs/icon
+import Bell2Icon from "./icons/PlasmicIcon__Bell2"; // plasmic-import: mRSf-KBLs/icon
+import UserCircle2Icon from "./icons/PlasmicIcon__UserCircle2"; // plasmic-import: PDxXU3RZq9/icon
 import imagepngCFPpvc8S from "./images/imagepng.png"; // plasmic-import: C_fPPVC8s/picture
 import videoCamerapngAsa6YwWaw from "./images/videoCamerapng.png"; // plasmic-import: asa6YWWaw/picture
 import smileyStickerpngJbiUkXsIu from "./images/smileyStickerpng.png"; // plasmic-import: jbiUkXsIu/picture
@@ -513,7 +519,200 @@ function PlasmicDashboard__RenderFunc(props) {
                   data-plasmic-name={"bottomNav"}
                   data-plasmic-override={overrides.bottomNav}
                   className={classNames(projectcss.all, sty.bottomNav)}
-                />
+                >
+                  <div
+                    data-plasmic-name={"group139"}
+                    data-plasmic-override={overrides.group139}
+                    className={classNames(projectcss.all, sty.group139)}
+                  >
+                    <div
+                      data-plasmic-name={"rectangle45"}
+                      data-plasmic-override={overrides.rectangle45}
+                      className={classNames(projectcss.all, sty.rectangle45)}
+                    />
+
+                    <div
+                      data-plasmic-name={"home"}
+                      data-plasmic-override={overrides.home}
+                      className={classNames(projectcss.all, sty.home)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? true
+                          : true
+                      ) ? (
+                        <House2Icon
+                          className={classNames(projectcss.all, sty.svg__rqqcT)}
+                          role={"img"}
+                        />
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bMy9V
+                        )}
+                      >
+                        {"Home"}
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={"marketplace"}
+                      data-plasmic-override={overrides.marketplace}
+                      className={classNames(projectcss.all, sty.marketplace)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? true
+                          : true
+                      ) ? (
+                        <Storefront2Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___6Vrtw
+                          )}
+                          role={"img"}
+                        />
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__cY1Pd
+                        )}
+                      >
+                        {"Outlet"}
+                      </div>
+                    </div>
+
+                    <div
+                      data-plasmic-name={"messages"}
+                      data-plasmic-override={overrides.messages}
+                      className={classNames(projectcss.all, sty.messages)}
+                    >
+                      <div
+                        data-plasmic-name={"messages3"}
+                        data-plasmic-override={overrides.messages3}
+                        className={classNames(projectcss.all, sty.messages3)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___4Xo3W
+                          )}
+                        >
+                          {"Messages"}
+                        </div>
+
+                        {(
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? true
+                            : true
+                        ) ? (
+                          <Vector98Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__hIgO6
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </div>
+
+                      {(
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? true
+                          : true
+                      ) ? (
+                        <Vector99Icon
+                          className={classNames(projectcss.all, sty.svg__yIcWg)}
+                          role={"img"}
+                        />
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? true
+                          : true
+                      ) ? (
+                        <Vector99Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___6N7Yc
+                          )}
+                          role={"img"}
+                        />
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? true
+                          : true
+                      ) ? (
+                        <Vector99Icon
+                          className={classNames(projectcss.all, sty.svg__lHm5K)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </div>
+
+                    <div
+                      data-plasmic-name={"nofitication"}
+                      data-plasmic-override={overrides.nofitication}
+                      className={classNames(projectcss.all, sty.nofitication)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__qyu35
+                        )}
+                      >
+                        {"Notification"}
+                      </div>
+
+                      {(
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? true
+                          : true
+                      ) ? (
+                        <Bell2Icon
+                          className={classNames(projectcss.all, sty.svg__v0U4Y)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </div>
+
+                    <div
+                      data-plasmic-name={"profile"}
+                      data-plasmic-override={overrides.profile}
+                      className={classNames(projectcss.all, sty.profile)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___5Dhd1
+                        )}
+                      >
+                        {"Profile"}
+                      </div>
+
+                      {(
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? true
+                          : true
+                      ) ? (
+                        <UserCircle2Icon
+                          className={classNames(projectcss.all, sty.svg__dJo2T)}
+                          role={"img"}
+                        />
+                      ) : null}
+                    </div>
+                  </div>
+                </div>
               ) : null}
             </div>
           </div>
@@ -551,7 +750,15 @@ const PlasmicDescendants = {
     "rectangle208",
     "messages2",
     "messagesBox",
-    "bottomNav"
+    "bottomNav",
+    "group139",
+    "rectangle45",
+    "home",
+    "marketplace",
+    "messages",
+    "messages3",
+    "nofitication",
+    "profile"
   ],
 
   container: [
@@ -580,7 +787,15 @@ const PlasmicDescendants = {
     "rectangle208",
     "messages2",
     "messagesBox",
-    "bottomNav"
+    "bottomNav",
+    "group139",
+    "rectangle45",
+    "home",
+    "marketplace",
+    "messages",
+    "messages3",
+    "nofitication",
+    "profile"
   ],
 
   dashboardSidebar: ["dashboardSidebar"],
@@ -608,7 +823,15 @@ const PlasmicDescendants = {
     "rectangle208",
     "messages2",
     "messagesBox",
-    "bottomNav"
+    "bottomNav",
+    "group139",
+    "rectangle45",
+    "home",
+    "marketplace",
+    "messages",
+    "messages3",
+    "nofitication",
+    "profile"
   ],
 
   dashboardHeader: ["dashboardHeader"],
@@ -705,7 +928,36 @@ const PlasmicDescendants = {
   rectangle208: ["rectangle208"],
   messages2: ["messages2", "messagesBox"],
   messagesBox: ["messagesBox"],
-  bottomNav: ["bottomNav"]
+  bottomNav: [
+    "bottomNav",
+    "group139",
+    "rectangle45",
+    "home",
+    "marketplace",
+    "messages",
+    "messages3",
+    "nofitication",
+    "profile"
+  ],
+
+  group139: [
+    "group139",
+    "rectangle45",
+    "home",
+    "marketplace",
+    "messages",
+    "messages3",
+    "nofitication",
+    "profile"
+  ],
+
+  rectangle45: ["rectangle45"],
+  home: ["home"],
+  marketplace: ["marketplace"],
+  messages: ["messages", "messages3"],
+  messages3: ["messages3"],
+  nofitication: ["nofitication"],
+  profile: ["profile"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -768,6 +1020,14 @@ export const PlasmicDashboard = Object.assign(
     messages2: makeNodeComponent("messages2"),
     messagesBox: makeNodeComponent("messagesBox"),
     bottomNav: makeNodeComponent("bottomNav"),
+    group139: makeNodeComponent("group139"),
+    rectangle45: makeNodeComponent("rectangle45"),
+    home: makeNodeComponent("home"),
+    marketplace: makeNodeComponent("marketplace"),
+    messages: makeNodeComponent("messages"),
+    messages3: makeNodeComponent("messages3"),
+    nofitication: makeNodeComponent("nofitication"),
+    profile: makeNodeComponent("profile"),
     // Metadata about props expected for PlasmicDashboard
     internalVariantProps: PlasmicDashboard__VariantProps,
     internalArgProps: PlasmicDashboard__ArgProps

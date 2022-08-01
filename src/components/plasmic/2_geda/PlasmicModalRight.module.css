@@ -36,6 +36,14 @@
 @media (min-width: 0px) and (max-width: 600px) {
   .textInput {
     margin-left: -3px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 320px) {
+  .textInput {
+    height: 50px;
+    flex-shrink: 0;
   }
 }
 .freeBox__xQtxz {

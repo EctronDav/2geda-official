@@ -25,6 +25,11 @@
   box-shadow: inset 0px 5px 16px 5px #00000033;
   padding: 8px;
 }
+@media (max-width: 1000px) {
+  .authContainer {
+    height: 100vh;
+  }
+}
 .authForm {
   display: flex;
   position: absolute;
@@ -38,6 +43,11 @@
   padding: 8px;
   margin: 14% 0% 0% 5%;
   border: 4px solid #6e67672e;
+}
+@media (max-width: 1000px) {
+  .authForm {
+    margin-top: 7%;
+  }
 }
 @media (min-width: 0px) and (max-width: 600px) {
   .authForm {

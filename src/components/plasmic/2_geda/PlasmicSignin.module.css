@@ -101,6 +101,13 @@
   flex-direction: row;
   padding: 0px;
 }
+@media (max-width: 1000px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-column-gap: 0px;
+  }
+}
 .mainLeft:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -113,4 +120,9 @@
 .authBox:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+}
+@media (max-width: 1000px) {
+  .authBox:global(.__wab_instance) {
+    width: 100%;
+  }
 }

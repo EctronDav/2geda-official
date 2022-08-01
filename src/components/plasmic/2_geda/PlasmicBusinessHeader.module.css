@@ -35,6 +35,14 @@
     margin-left: -25px;
   }
 }
+@media (max-width: 320px) {
+  ._2Geda11 {
+    width: 40px;
+    height: 40px;
+    margin-left: -37px;
+    flex-shrink: 0;
+  }
+}
 .group10 {
   width: 40%;
   height: 84px;
@@ -86,6 +94,11 @@
     margin-left: -30px;
   }
 }
+@media (max-width: 320px) {
+  .rectangle30 {
+    margin-left: -83px;
+  }
+}
 .svg {
   position: absolute;
   object-fit: cover;
@@ -111,6 +124,11 @@
   top: auto;
   left: auto;
   flex-shrink: 0;
+}
+@media (max-width: 320px) {
+  .group242 {
+    display: none;
+  }
 }
 .img {
   position: absolute;

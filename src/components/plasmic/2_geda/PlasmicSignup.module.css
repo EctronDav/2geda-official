@@ -80,6 +80,11 @@
   margin: 0% 5% 0% 0%;
   border-width: 1px;
 }
+@media (min-width: 0px) and (max-width: 600px) {
+  .button {
+    display: none;
+  }
+}
 .main {
   display: flex;
   position: relative;

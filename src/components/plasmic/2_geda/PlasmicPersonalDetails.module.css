@@ -59,6 +59,13 @@
   align-items: flex-start;
   padding: 8px;
 }
+@media (min-width: 0px) and (max-width: 600px) {
+  .main {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}
 .text__fn5K {
   position: relative;
   width: 100%;
@@ -88,9 +95,11 @@
   .mainCentered {
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: visible;
+    width: 100%;
+    margin-left: 0%;
     flex-column-gap: 0px;
   }
 }

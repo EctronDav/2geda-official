@@ -221,6 +221,8 @@
   background: #ff4d02;
   flex-shrink: 0;
   display: none;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
   padding: 8px;
   margin: 2% 0% -16% 29%;
 }

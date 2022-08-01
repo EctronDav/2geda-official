@@ -99,43 +99,45 @@ function PlasmicBusinessHeader__RenderFunc(props) {
           </div>
         </div>
 
-        <div
-          data-plasmic-name={"group242"}
-          data-plasmic-override={overrides.group242}
-          className={classNames(projectcss.all, sty.group242)}
-        >
-          <p.PlasmicImg
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
-            alt={""}
-            className={classNames(sty.img)}
-            displayHeight={"40px"}
-            displayMaxHeight={"none"}
-            displayMaxWidth={"100%"}
-            displayMinHeight={"0"}
-            displayMinWidth={"0"}
-            displayWidth={"40px"}
-            loading={"lazy"}
-            src={{
-              src: unsplash5N3Jp9WajTsYDdWxVaitl,
-              fullWidth: 40,
-              fullHeight: 40,
-              aspectRatio: 1
-            }}
-          />
-
+        {(hasVariant(globalVariants, "screen", "smallMobile") ? true : true) ? (
           <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text
-            )}
+            data-plasmic-name={"group242"}
+            data-plasmic-override={overrides.group242}
+            className={classNames(projectcss.all, sty.group242)}
           >
-            {"My Profile"}
+            <p.PlasmicImg
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img)}
+              displayHeight={"40px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"40px"}
+              loading={"lazy"}
+              src={{
+                src: unsplash5N3Jp9WajTsYDdWxVaitl,
+                fullWidth: 40,
+                fullHeight: 40,
+                aspectRatio: 1
+              }}
+            />
+
+            <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text
+              )}
+            >
+              {"My Profile"}
+            </div>
           </div>
-        </div>
+        ) : null}
       </div>
     </div>
   );

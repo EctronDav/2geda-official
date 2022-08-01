@@ -108,8 +108,10 @@ function PlasmicMainLeft__RenderFunc(props) {
         )}
       >
         {hasVariant(globalVariants, "screen", "mobile")
-          ? "Get Started"
-          : "Sign up"}
+          ? "Sign in"
+          : hasVariant(globalVariants, "screen", "tablet")
+          ? "Get started"
+          : "Get started"}
       </button>
 
       {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
@@ -121,7 +123,7 @@ function PlasmicMainLeft__RenderFunc(props) {
             sty.button__fkQWf
           )}
         >
-          {"Click Me"}
+          {"Sign up"}
         </button>
       ) : null}
     </div>

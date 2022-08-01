@@ -92,18 +92,26 @@ function PlasmicManageBusiness__RenderFunc(props) {
                 data-plasmic-override={overrides.rectangle209}
                 className={classNames(projectcss.all, sty.rectangle209)}
               >
-                <span
-                  data-plasmic-name={"span"}
-                  data-plasmic-override={overrides.span}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.span,
-                    projectcss.__wab_text,
-                    sty.span
-                  )}
-                >
-                  {"People"}
-                </span>
+                {(
+                  hasVariant(globalVariants, "screen", "smallMobile")
+                    ? true
+                    : true
+                ) ? (
+                  <span
+                    data-plasmic-name={"span"}
+                    data-plasmic-override={overrides.span}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.span,
+                      projectcss.__wab_text,
+                      sty.span
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "smallMobile")
+                      ? "People"
+                      : "People"}
+                  </span>
+                ) : null}
 
                 <div
                   className={classNames(
@@ -142,15 +150,21 @@ function PlasmicManageBusiness__RenderFunc(props) {
                     </div>
                   </div>
 
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__cSbnJ
-                    )}
-                  >
-                    {"Add a new Business page"}
-                  </div>
+                  {(
+                    hasVariant(globalVariants, "screen", "smallMobile")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__cSbnJ
+                      )}
+                    >
+                      {"Add a new Business page"}
+                    </div>
+                  ) : null}
                 </div>
               </div>
 

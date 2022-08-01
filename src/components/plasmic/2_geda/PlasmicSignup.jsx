@@ -96,18 +96,22 @@ function PlasmicSignup__RenderFunc(props) {
               data-plasmic-override={overrides.headerRight}
               className={classNames(projectcss.all, sty.headerRight)}
             >
-              <button
-                data-plasmic-name={"button"}
-                data-plasmic-override={overrides.button}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.button,
-                  projectcss.__wab_text,
-                  sty.button
-                )}
-              >
-                {"Sign in"}
-              </button>
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <button
+                  data-plasmic-name={"button"}
+                  data-plasmic-override={overrides.button}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.button,
+                    projectcss.__wab_text,
+                    sty.button
+                  )}
+                >
+                  {"Sign in"}
+                </button>
+              ) : null}
             </div>
           </div>
 
